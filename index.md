@@ -15,11 +15,11 @@
 <style>
   /* Header ရဲ့ အပေါ်အောက် အကွာအဝေးကို လျှော့ချခြင်း */
   .page-header {
-    padding: 3.5rem 4.5rem !important; /* မူလ 5rem ထက် အများကြီး လျှော့ချလိုက်တာပါ */
+    padding: 4rem 5rem !important; /* မူလ 5rem ထက် အများကြီး လျှော့ချလိုက်တာပါ */
   }
   .project-name {
     font-size: 2.5rem !important; /* စာလုံးအရွယ်အစား နည်းနည်း ပြန်ညှိခြင်း */
-    margin-bottom: 0.2rem !important;
+    margin-bottom: 0.3rem !important;
   }
   .project-tagline {
     font-size: 1rem !important;
@@ -32,9 +32,9 @@
   }
 </style>
 
-<div class="panoramic-container" style="position: relative; width: auto; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); margin-top: 30px; margin-bottom: 0px; overflow: hidden; max-height: 220px;">
+<div class="panoramic-container" style="position: relative; width: auto; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); margin-top: 30px; margin-bottom: 0px; overflow: hidden; max-height: 200px;">
   
-  <img src="./assets/images/Tatkon-Sat-Image.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: 220px; display: block; object-fit: cover; object-position: center; opacity: 0.85;">
+  <img src="./assets/images/Tatkon-Sat-Image.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: 200px; display: block; object-fit: cover; object-position: center; opacity: 0.85;">
 
   <div style="position: absolute; bottom: 10px; left: 0; width: 100%; text-align: center; color: #ffffff; font-size: 12px; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); z-index: 10;">
     Tatkon-archivE is maintained by Arkar-rakrA.<br>
