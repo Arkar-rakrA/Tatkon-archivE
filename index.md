@@ -48,15 +48,15 @@
     width: auto; 
     margin-left: calc(-50vw + 50%); 
     margin-right: calc(-50vw + 50%); 
-    margin-top: 1px; 
+    margin-top: -1px; 
     margin-bottom: -50px; 
     overflow: hidden; 
-    height: 220px;
+    height: 200px;
   }
   /* ပုံကို နဂိုအလင်း ၈၅% အတိုင်း ပြန်ထားခြင်း */
   .p-banner img {
     width: 100%; 
-    height: 220px; 
+    height: 200px; 
     display: block; 
     object-fit: cover; 
     object-position: center; 
@@ -68,12 +68,12 @@
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    width: 94%; 
+    width: 90%; 
     text-align: center; 
     z-index: 9999 !important; 
   }
   .p-buttons {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
   }
   .p-btn {
     display: inline-block; 
