@@ -1,5 +1,11 @@
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+# Website ရဲ့ ခေါင်းစဉ်ကြီး
+title: "ကိုယ့်မြို့အမည် မော်ကွန်းတိုက်"
+
+# ခေါင်းစဉ်အောက်က Description စာတန်းလေး (အစ်ကို့စိတ်ကြိုက် ပြောင်းရေးပါ)
+description: "ကျွန်ုပ်တို့၏ ဒေသသမိုင်း၊ ယဉ်ကျေးမှုနှင့် အမှတ်တရများကို ရေရှည်ထိန်းသိမ်းရန် စုစည်းထားသော နေရာ"
+
+# Download Button ကြီးတွေကို ပျောက်သွားအောင် လုပ်မယ့် ကုဒ်
+show_downloads: false
+
+# လက်ရှိ သုံးနေတဲ့ Theme အမျိုးအစား
 theme: jekyll-theme-cayman
