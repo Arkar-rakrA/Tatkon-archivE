@@ -65,7 +65,7 @@
   /* စာသားနှင့်ခလုတ်များပါဝင်မည့် အစုအဖွဲ့ကို ကွက်တိ ဗဟိုချခြင်း */
   .p-content {
     position: absolute; 
-    top: 75%; 
+    top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     width: 75%; 
@@ -73,7 +73,7 @@
     z-index: 9999 !important; 
   }
   .p-buttons {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
   .p-btn {
     display: inline-block; 
