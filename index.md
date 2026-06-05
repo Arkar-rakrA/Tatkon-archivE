@@ -11,4 +11,7 @@
 * [လေ့လာမှုနှင့် သုတေသနများ](./research.html) - မြို့နယ်တွင်း လေ့လာမှုသုတေသနအမျိုးမျိုးနှင့် ရလဒ်များ။
 
 ---
-*(အချက်အလက်များကို ဖြည်းဖြည်းချင်း ဆက်လက်ဖြည့်စွက်သွားပါမည်)*
+
+<div class="panoramic-container" style="position: relative; width: auto; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); margin-top: 50px; margin-bottom: 20px; overflow: hidden;">
+  <img src="./assets/images/tatkon-panorama.jpg" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: auto; display: block; object-fit: contain;">
+</div>
