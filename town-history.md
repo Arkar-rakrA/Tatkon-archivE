@@ -10,7 +10,7 @@
 
 ## ဓာတ်ပုံမှတ်တမ်း
 
-<Image src="image_agent_tag_7667541338535118165" alt="Tatkon town landscape view with pagodas and mountains in the background" caption="တပ်ကုန်းမြို့ပြအလှနှင့် အဝေးမြင် မြင်ကွင်း" />
+*(ဓာတ်ပုံများကို နောက်တစ်ဆင့်တွင် စနစ်တကျ ပြန်လည်ထည့်သွင်းပါမည်)*
 
 ---
 
