@@ -15,14 +15,14 @@
 <style>
   /* Header ရဲ့ အပေါ်အောက် အကွာအဝေးကို လျှော့ချခြင်း */
   .page-header {
-    padding: 3rem 4rem !important; /* မူလ 5rem ထက် အများကြီး လျှော့ချလိုက်တာပါ */
+    padding: 3.5rem 4.5rem !important; /* မူလ 5rem ထက် အများကြီး လျှော့ချလိုက်တာပါ */
   }
   .project-name {
-    font-size: 2.5rem !important; /* စာလုံးအရွယ်အစား နည်းနည်း ပြန်ညှိခြင်း */
+    font-size: 3rem !important; /* စာလုံးအရွယ်အစား နည်းနည်း ပြန်ညှိခြင်း */
     margin-bottom: 0.2rem !important;
   }
   .project-tagline {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
     margin-bottom: 0 !important;
   }
   
@@ -32,7 +32,7 @@
   }
 </style>
 
-<div class="panoramic-container" style="position: relative; width: auto; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); margin-top: 30px; margin-bottom: 0px; overflow: hidden; max-height: 180px;">
+<div class="panoramic-container" style="position: relative; width: auto; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); margin-top: 30px; margin-bottom: 0px; overflow: hidden; max-height: 220px;">
   
   <img src="./assets/images/Tatkon-Sat-Image.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: 140px; display: block; object-fit: cover; object-position: center; opacity: 0.85;">
 
