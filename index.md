@@ -65,7 +65,7 @@
   /* စာသားနှင့်ခလုတ်များပါဝင်မည့် အစုအဖွဲ့ကို ကွက်တိ ဗဟိုချခြင်း */
   .p-content {
     position: absolute; 
-    top: 60%; 
+    top: 70%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     width: 85%; 
@@ -78,11 +78,11 @@
   .p-btn {
     display: inline-block; 
     padding: 6px 16px; 
-    background: rgba(255, 255, 255, 0.75) !important; 
+    background: rgba(255, 255, 255, 0.5) !important; 
     color: #ffffff !important; 
     text-decoration: none; 
     font-size: 12px; 
-    border: 1px solid rgba(255,255,255,0.8); 
+    border: 1px solid rgba(255,255,255,0.9999); 
     border-radius: 4px; 
     margin: 0 5px;
     font-weight: bold;
@@ -90,9 +90,9 @@
   /* စာသားများ ပုံပေါ်တွင် ကွက်တိပေါ်စေရန် Block element ပြောင်းလဲခြင်း */
   .p-text {
     display: block;
-    font-size: 11px !important; 
+    font-size: 10px !important; 
     color: #ffffff !important;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1), -2px -2px 5px rgba(0, 0, 0, 1), 2px -2px 5px rgba(0, 0, 0, 1), -2px 2px 5px rgba(0, 0, 0, 1); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1), -2px -2px 5px rgba(0, 0, 0, 1), 2px -2px 5px rgba(0, 0, 0, 1), -2px 2px 5px rgba(0, 0, 0, 0.5); 
     margin: 0; 
     line-height: 1.4;
     font-family: sans-serif;
