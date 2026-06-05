@@ -65,20 +65,20 @@
   /* စာသားနှင့်ခလုတ်များပါဝင်မည့် အစုအဖွဲ့ကို ကွက်တိ ဗဟိုချခြင်း */
   .p-content {
     position: absolute; 
-    top: 70%; 
+    top: 75%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    width: 85%; 
+    width: 75%; 
     text-align: center; 
     z-index: 9999 !important; 
   }
   .p-buttons {
-    margin-bottom: 6px;
+    margin-bottom: 16px;
   }
   .p-btn {
     display: inline-block; 
     padding: 6px 16px; 
-    background: rgba(255, 255, 255, 0.5) !important; 
+    background: rgba(255, 255, 255, 0.1) !important; 
     color: #ffffff !important; 
     text-decoration: none; 
     font-size: 12px; 
@@ -92,7 +92,7 @@
     display: block;
     font-size: 10px !important; 
     color: #ffffff !important;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1), -2px -2px 5px rgba(0, 0, 0, 1), 2px -2px 5px rgba(0, 0, 0, 1), -2px 2px 5px rgba(0, 0, 0, 0.5); 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1), -1px -1px 1px rgba(0, 0, 0, 0.1), 1px -1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1); 
     margin: 0; 
     line-height: 1.4;
     font-family: sans-serif;
