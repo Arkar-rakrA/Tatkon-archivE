@@ -2,3 +2,7 @@
 ---
 
 @import 'jekyll-theme-cayman';
+@import "{{ site.theme }}";
+
+// View on GitHub အပါအဝင် ခလုတ်အားလုံးကို ဇွတ်ဖျောက်ခိုင်းတဲ့ ကုဒ်
+.btn { display: none !important; }
