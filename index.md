@@ -65,10 +65,10 @@
   /* စာသားနှင့်ခလုတ်များပါဝင်မည့် အစုအဖွဲ့ကို ကွက်တိ ဗဟိုချခြင်း */
   .p-content {
     position: absolute; 
-    top: 50%; 
+    top: 60%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    width: 90%; 
+    width: 85%; 
     text-align: center; 
     z-index: 9999 !important; 
   }
@@ -78,7 +78,7 @@
   .p-btn {
     display: inline-block; 
     padding: 6px 16px; 
-    background: rgba(0, 0, 0, 0.75) !important; 
+    background: rgba(255, 255, 255, 0.75) !important; 
     color: #ffffff !important; 
     text-decoration: none; 
     font-size: 12px; 
