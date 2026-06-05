@@ -41,7 +41,7 @@
     margin-left: calc(-50vw + 50%); 
     margin-right: calc(-50vw + 50%); 
     margin-top: 30px; 
-    margin-bottom: 0px; 
+    margin-bottom: -50px; 
     overflow: hidden; 
     height: 200px;
   }
