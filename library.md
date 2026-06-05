@@ -9,8 +9,8 @@ description: သမိုင်းမှတ်တမ်းများ၊ အစ
 <br>
 
 ### 📁 ဘာသာရပ်ခွဲများ
-* 📂 [သန်းခေါင်စာရင်းများ](./library/census/census-list.html)
-* 📂 [ဗြိတိသျှအုပ်ချုပ်ရေးအစီရင်ခံစာများ](./library/british-reports/report-list.html)
+* 📂 [သန်းခေါင်စာရင်းများ](./library/census/census_list.html)
+* 📂 [ဗြိတိသျှအုပ်ချုပ်ရေးအစီရင်ခံစာများ](./library/1983-british-reports/report-list.html)
 
 ---
 
