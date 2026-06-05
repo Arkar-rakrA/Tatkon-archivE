@@ -30,6 +30,12 @@
     display: none !important;
   }
 
+  /* ဤအပိုင်းအသစ်ကို ထည့်သွင်းလိုက်ပါသည် */
+  .main-content {
+    max-width: 90rem !important; 
+    padding: 2rem 4rem !important;
+  }
+
   /* ပင်မအိမ်အမြင့်ကို ၂၆၀ အထိ ကန့်သတ်ပြီး နေရာချခြင်း */
   .p-banner {
     position: relative; 
@@ -58,7 +64,7 @@
     transform: translate(-50%, -50%); 
     width: 94%; 
     text-align: center; 
-    z-index: 9999 !important; /* လုံးဝအပေါ်ဆုံးသို့ ဆွဲတင်ခြင်း */
+    z-index: 9999 !important; 
   }
   .p-buttons {
     margin-bottom: 12px;
@@ -66,7 +72,7 @@
   .p-btn {
     display: inline-block; 
     padding: 6px 16px; 
-    background: rgba(0, 0, 0, 0.75) !important; /* ပုံလင်းနေသဖြင့် ခလုတ်နောက်ခံကို ပိုမှောင်ပေးထားပါသည် */
+    background: rgba(0, 0, 0, 0.75) !important; 
     color: #ffffff !important; 
     text-decoration: none; 
     font-size: 12px; 
@@ -80,22 +86,9 @@
     display: block;
     font-size: 11px !important; 
     color: #ffffff !important;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1), -2px -2px 5px rgba(0, 0, 0, 1), 2px -2px 5px rgba(0, 0, 0, 1), -2px 2px 5px rgba(0, 0, 0, 1); /* ပုံလင်းသဖြင့် စာသားပတ်လည်ကို အမည်းရိပ် အထူကြီး ချပေးထားပါသည် */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1), -2px -2px 5px rgba(0, 0, 0, 1), 2px -2px 5px rgba(0, 0, 0, 1), -2px 2px 5px rgba(0, 0, 0, 1); 
     margin: 0; 
     line-height: 1.4;
     font-family: sans-serif;
   }
 </style>
-
-<div class="p-banner">
-  <img src="./assets/images/Tatkon-Sat-Image-1.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်">
-  <div class="p-content">
-    <div class="p-buttons">
-      <a href="./about.html" class="p-btn">About Us</a>
-      <a href="./contact.html" class="p-btn">How to Contribute</a>
-    </div>
-    <span class="p-text">
-      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references. If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
-    </span>
-  </div>
-</div>
