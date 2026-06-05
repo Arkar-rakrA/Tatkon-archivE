@@ -17,11 +17,11 @@
   }
   .project-name {
     font-size: 2.5rem !important; 
-    margin-bottom: 0.3rem !important;
+    margin-bottom: 1rem !important;
   }
   .project-tagline {
     font-size: 1rem !important;
-    margin-bottom: 0.1 !important;
+    margin-bottom: 1rem !important;
   }
   
   footer.site-footer {
