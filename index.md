@@ -33,7 +33,11 @@
     max-width: 60rem !important; 
     padding: 2rem 4rem 0rem !important;
   }
-
+  /* အညွှန်းစာကြောင်းတစ်ခုချင်းစီကို အပေါ်အောက် 12px စီ ခွာပေးလိုက်ခြင်း */
+  .main-content li {
+    margin-bottom: 12px !important; 
+  }
+  
   /* ပင်မအိမ်အမြင့်ကို ၂၂၀ အထိ ကန့်သတ်ပြီး နေရာချခြင်း */
   .p-banner {
     position: relative; 
