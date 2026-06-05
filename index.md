@@ -36,10 +36,10 @@
   <img src="./assets/images/Tatkon-Sat-Image-1.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: 200px; display: block; object-fit: cover; object-position: center; opacity: 0.85;">
 
 <!-- ဓာတ်ပုံပေါ်တွင် စာသားနှင့် ခလုတ်များ တင်ခြင်း အပိုင်း -->
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; text-align: center; color: #ffffff; z-index: 10;">
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 96%; text-align: center; color: #ffffff; z-index: 10;">
     
     <!-- မူပိုင်ခွင့် ရှင်းလင်းချက် စာသားတို -->
-    <p style="font-size: 11px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9); margin-bottom: 12px; line-height: 1.4;">
+    <p style="font-size: 10px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9); margin-bottom: 12px; line-height: 1.4;">
       This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references. If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
     </p>
     
