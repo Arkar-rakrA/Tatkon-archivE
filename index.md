@@ -60,12 +60,12 @@
     display: block; 
     object-fit: cover; 
     object-position: center; 
-    opacity: 0.85; 
+    opacity: 0.99; 
   }
   /* စာသားနှင့်ခလုတ်များပါဝင်မည့် အစုအဖွဲ့ကို ကွက်တိ ဗဟိုချခြင်း */
   .p-content {
     position: absolute; 
-    top: 60%; 
+    top: 65%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     width: 75%; 
@@ -73,7 +73,7 @@
     z-index: 9999 !important; 
   }
   .p-buttons {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
   .p-btn {
     display: inline-block; 
@@ -107,7 +107,7 @@
       <a href="./contact.html" class="p-btn">How to Contribute</a>
     </div>
     <span class="p-text">
-      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references. If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
+      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines.<br> Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references.<br> If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
     </span>
   </div>
 </div>
