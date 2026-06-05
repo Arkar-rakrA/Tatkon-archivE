@@ -39,12 +39,12 @@
     margin-top: 30px; 
     margin-bottom: 0px; 
     overflow: hidden; 
-    height: 280px;
+    height: 200px;
   }
   /* ပုံကို နဂိုအလင်း ၈၅% အတိုင်း ပြန်ထားခြင်း */
   .p-banner img {
     width: 100%; 
-    height: 280px; 
+    height: 200px; 
     display: block; 
     object-fit: cover; 
     object-position: center; 
