@@ -29,23 +29,67 @@
   footer.site-footer {
     display: none !important;
   }
+
+  /* ပုံနှင့် စာသားများ တွဲလျက်ပေါ်စေရန် စနစ်တကျ CSS သီးသန့်ထုတ်လိုက်ခြင်း */
+  .p-banner {
+    position: relative; 
+    width: auto; 
+    margin-left: calc(-50vw + 50%); 
+    margin-right: calc(-50vw + 50%); 
+    margin-top: 30px; 
+    margin-bottom: 0px; 
+    overflow: hidden; 
+    height: 250px;
+  }
+  .p-banner img {
+    width: 100%; 
+    height: 250px; 
+    display: block; 
+    object-fit: cover; 
+    object-position: center; 
+    opacity: 0.35; /* စာသားထင်းခနဲ ပေါ်လာအောင် ပုံကို နည်းနည်း မှောင်ချထားပါသည် */
+  }
+  .p-content {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 90%; 
+    text-align: center; 
+    z-index: 999; /* အပေါ်ဆုံးမှာ ရှိနေစေရန် */
+  }
+  .p-buttons {
+    margin-bottom: 15px;
+  }
+  .p-btn {
+    display: inline-block; 
+    padding: 6px 16px; 
+    background: rgba(0, 0, 0, 0.6) !important; /* ခလုတ်ကို ပိုထင်ရှားအောင် နောက်ခံအမည်းရောင် ပေးထားပါသည် */
+    color: #ffffff !important; 
+    text-decoration: none; 
+    font-size: 12px; 
+    border: 1px solid rgba(255,255,255,0.6); 
+    border-radius: 4px; 
+    margin: 0 5px;
+  }
+  .p-text {
+    font-size: 11px !important; 
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,1); /* စာသားနောက်ခံ ရိပ်ဖြတ်ပေးထားပါသည် */
+    margin: 0; 
+    line-height: 1.4;
+  }
 </style>
 
-<div class="panoramic-container" style="position: relative; width: auto; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); margin-top: 30px; margin-bottom: 0px; overflow: hidden; max-height: 250px;">
-  
-  <img src="./assets/images/Tatkon-Sat-Image-1.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: 250px; display: block; object-fit: cover; object-position: center; opacity: 0.85;">
-
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 96%; text-align: center; color: #ffffff; z-index: 10;">
-
-    <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 15px;">
-      <a href="./about.html" style="display: inline-block; padding: 6px 16px; background: rgba(255,255,255,0.2); color: #ffffff; text-decoration: none; font-size: 12px; border: 1px solid rgba(255,255,255,0.6); border-radius: 4px; backdrop-filter: blur(4px); transition: 0.3s; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">About Us</a>
-      <a href="./contact.html" style="display: inline-block; padding: 6px 16px; background: rgba(255,255,255,0.2); color: #ffffff; text-decoration: none; font-size: 12px; border: 1px solid rgba(255,255,255,0.6); border-radius: 4px; backdrop-filter: blur(4px); transition: 0.3s; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">How to Contribute</a>
+<div class="p-banner">
+  <img src="./assets/images/Tatkon-Sat-Image-1.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်">
+  <div class="p-content">
+    <div class="p-buttons">
+      <a href="./about.html" class="p-btn">About Us</a>
+      <a href="./contact.html" class="p-btn">How to Contribute</a>
     </div>
-    
-    <p style="font-size: 10.5px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9); margin: 0; line-height: 1.35;">
+    <p class="p-text">
       This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references. If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
     </p>
-
   </div>
-
 </div>
