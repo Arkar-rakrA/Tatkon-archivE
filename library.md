@@ -14,6 +14,8 @@ description: သမိုင်းမှတ်တမ်းများ၊ အစ
 
 ---
 
-<style>.site-footer { display: none !important; }</style>
-
 [ပင်မစာမျက်နှာသို့ ပြန်သွားရန်](./index.html)
+
+<style>
+  .site-footer { display: none !important; }
+</style>
