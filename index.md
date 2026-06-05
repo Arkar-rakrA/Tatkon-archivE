@@ -31,7 +31,7 @@
   /* ဤအပိုင်းအသစ်ကို ထည့်သွင်းလိုက်ပါသည် */
   .main-content {
     max-width: 70rem !important; 
-    padding: 2rem 4rem !important;
+    padding: 2rem 4rem 0rem !important;
   }
 
   /* ပင်မအိမ်အမြင့်ကို ၂၆၀ အထိ ကန့်သတ်ပြီး နေရာချခြင်း */
