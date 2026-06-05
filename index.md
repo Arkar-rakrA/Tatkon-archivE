@@ -12,7 +12,3 @@
 
 ---
 *(အချက်အလက်များကို ဖြည်းဖြည်းချင်း ဆက်လက်ဖြည့်စွက်သွားပါမည်)*
-
-<div style="width: 100%; margin-top: 50px; margin-bottom: 20px; overflow: hidden; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
-  <img src="./assets/images/tatkon-sat-image.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: auto; display: block; object-fit: contain;">
-</div>
