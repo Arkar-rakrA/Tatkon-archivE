@@ -1,4 +1,4 @@
-<h2 style="margin-top: -5px; margin-bottom: 5px;">မော်ကွန်းတိုက်အညွှန်း</h2>
+<h2 style="margin-top: -5px; margin-bottom: 15px;">မော်ကွန်းတိုက်အညွှန်း</h2>
 
 * [တပ်ကုန်းမြို့နယ်နောက်ခံသမိုင်း](./township-history.html) - ဒေသတွင်း မြို့နယ်အဆင့် ခေတ်အဆက်ဆက် နောက်ခံသမိုင်း။
 * [တပ်ကုန်းမြို့သမိုင်း](./town-history.html) - မြို့၏ နောက်ခံသမိုင်းကြောင်း။
@@ -39,7 +39,7 @@
   }
   /* အညွှန်းစာကြောင်းတစ်ခုချင်းစီကို အပေါ်အောက် 12px စီ ခွာပေးလိုက်ခြင်း */
   .main-content li {
-    margin-bottom: 4px !important; 
+    margin-bottom: 6px !important; 
   }
   
   /* ပင်မအိမ်အမြင့်ကို ၂၂၀ အထိ ကန့်သတ်ပြီး နေရာချခြင်း */
@@ -51,12 +51,12 @@
     margin-top: 30px; 
     margin-bottom: -50px; 
     overflow: hidden; 
-    height: 200px;
+    height: 220px;
   }
   /* ပုံကို နဂိုအလင်း ၈၅% အတိုင်း ပြန်ထားခြင်း */
   .p-banner img {
     width: 100%; 
-    height: 200px; 
+    height: 220px; 
     display: block; 
     object-fit: cover; 
     object-position: center; 
