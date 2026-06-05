@@ -34,7 +34,7 @@
 
 <div class="panoramic-container" style="position: relative; width: auto; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); margin-top: 30px; margin-bottom: 0px; overflow: hidden; max-height: 180px;">
   
-  <img src="./assets/images/tatkon-sat-image.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: 140px; display: block; object-fit: cover; object-position: center; opacity: 0.85;">
+  <img src="./assets/images/Tatkon-Sat-Image.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: 140px; display: block; object-fit: cover; object-position: center; opacity: 0.85;">
 
   <div style="position: absolute; bottom: 10px; left: 0; width: 100%; text-align: center; color: #ffffff; font-size: 12px; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); z-index: 10;">
     Tatkon-archivE is maintained by Arkar-rakrA.<br>
