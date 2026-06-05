@@ -1,5 +1,4 @@
 <br>
-
 ## မော်ကွန်းတိုက်အညွှန်း
 
 * [တပ်ကုန်းမြို့နယ်နောက်ခံသမိုင်း](./township-history.html) - ဒေသတွင်း မြို့နယ်အဆင့် ခေတ်အဆက်ဆက် နောက်ခံသမိုင်း။
@@ -40,8 +39,7 @@
     
     <!-- မူပိုင်ခွင့် ရှင်းလင်းချက် စာသားတို -->
     <p style="font-size: 11px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9); margin-bottom: 12px; line-height: 1.4;">
-      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references.<br>
-      If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
+      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references. If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
     </p>
     
     <!-- ပုံပေါ်တွင် ပေါ်မည့် Tab/ခလုတ်လေးများ -->
