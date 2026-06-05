@@ -35,7 +35,7 @@
   }
   /* အညွှန်းစာကြောင်းတစ်ခုချင်းစီကို အပေါ်အောက် 12px စီ ခွာပေးလိုက်ခြင်း */
   .main-content li {
-    margin-bottom: 12px !important; 
+    margin-bottom: 8px !important; 
   }
   
   /* ပင်မအိမ်အမြင့်ကို ၂၂၀ အထိ ကန့်သတ်ပြီး နေရာချခြင်း */
@@ -47,12 +47,12 @@
     margin-top: 30px; 
     margin-bottom: -50px; 
     overflow: hidden; 
-    height: 220px;
+    height: 200px;
   }
   /* ပုံကို နဂိုအလင်း ၈၅% အတိုင်း ပြန်ထားခြင်း */
   .p-banner img {
     width: 100%; 
-    height: 220px; 
+    height: 200px; 
     display: block; 
     object-fit: cover; 
     object-position: center; 
