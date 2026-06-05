@@ -5,8 +5,8 @@ description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမ
 ---
 
 <style>
-  /* ကာလာဘားကြီးထဲက Main Title (ဝဘ်ဆိုက်အမည်ကြီး) ကိုပဲ ဖျောက်ထားခြင်း */
-  .page-header h1 { 
+  /* 🛠 ကာလာဘား (Header) ထဲက ဝဘ်ဆိုက်အမည်ကြီးကိုပဲ သီးသန့်ရွေးပြီး ဖျောက်ခြင်း */
+  header.page-header h1 { 
     display: none !important; 
   }
   
@@ -38,6 +38,17 @@ description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမ
     margin: 0 auto !important;
     font-size: 16px !important;
     line-height: 1.7 !important;
+  }
+
+  /* 🛠 စာမျက်နှာထဲက စာအုပ်ခေါင်းစဉ်အစစ်ကို လုံးဝ ပျောက်မသွားအောင် တားဆီးပေးသည့် ကုဒ် */
+  .main-content .my-custom-title {
+    display: block !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: #222222 !important;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    line-height: 1.3 !important;
   }
 
   /* စာအုပ်ဖုံးနှင့် အချက်အလက်များကို ဘေးချင်းယှဉ်ပြမည့် Box ပုံစံ */
@@ -93,7 +104,7 @@ description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမ
   }
 </style>
 
-<h1 style="font-size: 2rem; font-weight: bold; color: #222; margin-top: 20px; margin-bottom: 25px;">📄 ၂၀၁၄ ခုနှစ် သန်းခေါင်စာရင်း တပ်ကုန်းမြို့နယ် အစီရင်ခံစာ</h1>
+<div class="my-custom-title">📄 ၂၀၁၄ ခုနှစ် သန်းခေါင်စာရင်း တပ်ကုန်းမြို့နယ် အစီရင်ခံစာ</div>
 
 <div class="book-container">
   <div class="book-cover">
