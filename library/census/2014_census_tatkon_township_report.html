@@ -5,22 +5,56 @@ description: စာအုပ်အညွှန်းနှင့် မှတ်
 ---
 
 <style>
-  /* အပေါ်က ကာလာဘားကြီးနှင့် Header တစ်ခုလုံးကို ဖျောက်ခြင်း */
-  .page-header { display: none !important; }
-  
-  /* စာမျက်နှာ အောက်ခြေကို ဖျောက်ခြင်း */
-  .site-footer { display: none !important; }
-  
-  /* စာဖတ်ရသက်သာအောင် စာမျက်နှာအကျယ်ကို ချုံ့ပြီး အလယ်ဗဟိုပို့ခြင်း */
-  .main-content {
-    max-width: 800px !important;
-    padding: 2rem 1rem !important;
-    margin: 0 auto !important;
-    font-size: 16px !important;
-    line-height: 1.6 !important;
+  /* ကာလာဘားကြီးကို ပြန်ချန်ထားပြီး အထဲက စာသားအရှည်ကြီးတွေကို ဖျောက်ခြင်း */
+  .page-header h1, .page-header .project-tagline { 
+    display: none !important; 
   }
   
-  /* Download ခလုတ် ပုံစံ ဒီဇိုင်း */
+  /* ကာလာဘား အလှအပအတွက် အမြင့်ကို နည်းနည်း ညှိပေးခြင်း */
+  .page-header {
+    padding: 2rem 1rem !important;
+  }
+
+  /* အောက်ခြေကို ဖျောက်ခြင်း */
+  .site-footer { 
+    display: none !important; 
+  }
+  
+  /* စာမျက်နှာကို စာအုပ်ဖတ်ရ အဆင်ပြေအောင် ဘေးဘောင် အကျယ်ညှိခြင်း */
+  .main-content {
+    max-width: 850px !important;
+    margin: 0 auto !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* စာအုပ်ဖုံးနှင့် အချက်အလက်များကို ဘေးချင်းယှဉ်ပြမည့် Box ပုံစံ */
+  .book-container {
+    display: flex;
+    gap: 30px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .book-cover {
+    flex: 0 0 150px;
+    text-align: center;
+  }
+  .book-cover img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  }
+  .book-info {
+    flex: 1;
+  }
+  .book-info p {
+    margin-bottom: 8px !important;
+  }
+
+  /* Download ခလုတ် ပုံစံ */
   .download-btn {
     display: inline-block;
     background-color: #007bff;
@@ -29,7 +63,7 @@ description: စာအုပ်အညွှန်းနှင့် မှတ်
     text-decoration: none !important;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .download-btn:hover {
     background-color: #0056b3;
@@ -38,11 +72,19 @@ description: စာအုပ်အညွှန်းနှင့် မှတ်
 
 # 📄 ၂၀၁၄ ခုနှစ် သန်းခေါင်စာရင်း တပ်ကုန်းမြို့နယ် အစီရင်ခံစာ
 
-<br>
-
-| စာအုပ်မျက်နှာဖုံး (Cover) | စာအုပ်အချက်အလက်များ (Metadata) |
-| :---: | :--- |
-| <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=150" alt="Book Cover" width="150"> <br> *ပုံသက်သက်သာ ဥပမာပြခြင်း* | **အမည်:** ၂၀၁၄ ခုနှစ် မြန်မာနိုင်ငံလူဦးရေနှင့် အိမ်အကြောင်းအရာသန်းခေါင်စာရင်း <br><br> **ခေါင်းစဉ်ခွဲ:** နေပြည်တော်၊ ဥတ္တရခရိုင်၊ တပ်ကုန်းမြို့နယ် အစီရင်ခံစာ <br><br> **ထုတ်ဝေသူ:** ပြည်သူ့အင်အားဦးစီးဌာန <br><br> **ထုတ်ဝေနှစ်:** ၂၀၁၇ ခုနှစ်၊ မေလ <br><br> <a href="ဒီနေရာမှာ_PDF_Link_ထည့်ပါ" class="download-btn" target="_blank">📥 အစီရင်ခံစာ (PDF) ဒေါင်းလုဒ်လုပ်ရန်</a> |
+<div class="book-container">
+  <div class="book-cover">
+    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=150" alt="Book Cover" width="150">
+    <br><small style="color:#666;">*စာအုပ်မျက်နှာဖုံးပုံ*</small>
+  </div>
+  <div class="book-info">
+    <p><strong>အမည်:</strong> ၂၀၁၄ ခုနှစ် မြန်မာနိုင်ငံလူဦးရေနှင့် အိမ်အကြောင်းအရာသန်းခေါင်စာရင်း</p>
+    <p><strong>ခေါင်းစဉ်ခွဲ:</strong> နေပြည်တော်၊ ဥတ္တရခရိုင်၊ တပ်ကုန်းမြို့နယ် အစီရင်ခံစာ</p>
+    <p><strong>ထုတ်ဝေသူ:</strong> ပြည်သူ့အင်အားဦးစီးဌာန</p>
+    <p><strong>ထုတ်ဝေနှစ်:</strong> ၂၀၁၇ ခုနှစ်၊ မေလ</p>
+    <a href="ဒီနေရာမှာ_PDF_Link_ထည့်ပါ" class="download-btn" target="_blank">📥 အစီရင်ခံစာ (PDF) ဒေါင်းလုဒ်လုပ်ရန်</a>
+  </div>
+</div>
 
 ---
 
@@ -50,7 +92,7 @@ description: စာအုပ်အညွှန်းနှင့် မှတ်
 
 ဤအစီရင်ခံစာပါ အချက်အလက်များထဲမှ တပ်ကုန်းမြို့နယ်နှင့် သက်ဆိုင်သော အရေးကြီးအချက်များကို အနှစ်ချုပ် ကောက်နုတ်ထားခြင်း ဖြစ်သည်။
 
-* **လူဦးရေ စုစုပေါင်း:** ၂၁၇,၀၉၃ ဦး (ကျား - ၁၀၃,၇၂၂ ဦး၊ မ - ၁၁၃,၃၇၁ ဦး) ဖြစ်သည်။
+* **လူဦးရေ စုစုပေါင်း:** ၂၁၇,၀၉參 ဦး (ကျား - ၁၀၃,၇၂၂ ဦး၊ မ - ၁၁၃,၃၇၁ ဦး) ဖြစ်သည်။
 * **မြို့ပြနှင့်ကျေးလက်:** မြို့ပေါ်တွင် ၄၁,၆၈၃ ဦး (၁၉.၂%) နေထိုင်ပြီး၊ ကျေးလက်တွင် ၁၇၅,၄၁၀ ဦး (၈၀.၈%) နေထိုင်သဖြင့် ကျေးလက်နေလူဦးရေ ပိုမိုများပြားသည်။
 * **အိမ်ထောင်စုအရေအတွက်:** စုစုပေါင်း ၅၀,၄၇၁ အိမ်ထောင်စု ရှိပြီး အိမ်ထောင်စုတစ်ခု၏ ပျမ်းမျှလူဦးရေမှာ ၄.၂ ဦး ဖြစ်သည်။
 * **စာတတ်မြောက်မှုနှုန်း:** တပ်ကုန်းမြို့နယ်၏ အသက် ၁၅ နှစ်အထက် စာတတ်မြောက်မှုနှုန်းမှာ ၉၄.၂% ရှိသည်။
