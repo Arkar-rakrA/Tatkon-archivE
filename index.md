@@ -48,7 +48,7 @@
     width: auto; 
     margin-left: calc(-50vw + 50%); 
     margin-right: calc(-50vw + 50%); 
-    margin-top: 30px; 
+    margin-top: 1px; 
     margin-bottom: -50px; 
     overflow: hidden; 
     height: 220px;
