@@ -14,38 +14,37 @@
 ---
 
 <style>
-  .page-header {
-    padding: 4rem 5rem !important; 
-  }
-  .project-name {
-    font-size: 2.5rem !important; 
-    margin-bottom: 0.3rem !important;
-  }
-  .project-tagline {
-    font-size: 1rem !important;
-    margin-bottom: 0 !important;
-  }
-  
-  footer.site-footer {
-    display: none !important;
-  }
+  .page-header {
+    padding: 4rem 5rem !important; 
+  }
+  .project-name {
+    font-size: 2.5rem !important; 
+    margin-bottom: 0.3rem !important;
+  }
+  .project-tagline {
+    font-size: 1rem !important;
+    margin-bottom: 0 !important;
+  }
+  
+  footer.site-footer {
+    display: none !important;
+  }
 </style>
 
-<div class="panoramic-container" style="position: relative; width: auto; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); margin-top: 30px; margin-bottom: 0px; overflow: hidden; max-height: 250px;">
-  
-  <img src="./assets/images/Tatkon-Sat-Image-1.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: 250px; display: block; object-fit: cover; object-position: center; opacity: 0.85;">
+<div class="panoramic-container" style="position: relative; width: auto; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); margin-top: 30px; margin-bottom: 0px; overflow: hidden; max-height: 200px;">
+  
+  <img src="./assets/images/Tatkon-Sat-Image-1.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: 200px; display: block; object-fit: cover; object-position: center; opacity: 0.85;">
 
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 96%; text-align: center; color: #ffffff; z-index: 10;">
+<!-- ဓာတ်ပုံပေါ်တွင် စာသားနှင့် ခလုတ်များ တင်ခြင်း အပိုင်း -->
+  <div style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); width: 96%; text-align: center; color: #ffffff; z-index: 10;">
 
-    <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 15px;">
-      <a href="./about.html" style="display: inline-block; padding: 6px 16px; background: rgba(255,255,255,0.2); color: #ffffff; text-decoration: none; font-size: 12px; border: 1px solid rgba(255,255,255,0.6); border-radius: 4px; backdrop-filter: blur(4px); transition: 0.3s; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">About Us</a>
-      <a href="./contact.html" style="display: inline-block; padding: 6px 16px; background: rgba(255,255,255,0.2); color: #ffffff; text-decoration: none; font-size: 12px; border: 1px solid rgba(255,255,255,0.6); border-radius: 4px; backdrop-filter: blur(4px); transition: 0.3s; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">How to Contribute</a>
-    </div>
-    
-    <p style="font-size: 10.5px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9); margin: 0; line-height: 1.35;">
-      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references. If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
-    </p>
-
-  </div>
-
-</div>
+    <!-- ပုံပေါ်တွင် ပေါ်မည့် Tab/ခလုတ်လေးများ -->
+    <div style="display: flex; justify-content: center; gap: 15px;">
+      <a href="./about.html" style="display: inline-block; padding: 6px 16px; background: rgba(255,255,255,0.2); color: #ffffff; text-decoration: none; font-size: 12px; border: 1px solid rgba(255,255,255,0.6); border-radius: 4px; backdrop-filter: blur(4px); transition: 0.3s; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">About Us</a>
+      <a href="./contact.html" style="display: inline-block; padding: 6px 16px; background: rgba(255,255,255,0.2); color: #ffffff; text-decoration: none; font-size: 12px; border: 1px solid rgba(255,255,255,0.6); border-radius: 4px; backdrop-filter: blur(4px); transition: 0.3s; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">How to Contribute</a>
+      
+    <!-- မူပိုင်ခွင့် ရှင်းလင်းချက် စာသားတို -->
+    <p style="font-size: 8px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9); margin-bottom: 8px; line-height: 1.2;">
+      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references. If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
+    </p>
+    </div>
