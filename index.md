@@ -1,6 +1,6 @@
 <br>
 
-## မော်ကွန်းတိုက်အညွှန်း
+<h2 style="margin-top: -15px; margin-bottom: 15px;">မော်ကွန်းတိုက်အညွှန်း</h2>
 
 * [တပ်ကုန်းမြို့နယ်နောက်ခံသမိုင်း](./township-history.html) - ဒေသတွင်း မြို့နယ်အဆင့် ခေတ်အဆက်ဆက် နောက်ခံသမိုင်း။
 * [တပ်ကုန်းမြို့သမိုင်း](./town-history.html) - မြို့၏ နောက်ခံသမိုင်းကြောင်း။
@@ -36,7 +36,7 @@
   <img src="./assets/images/Tatkon-Sat-Image-1.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်" style="width: 100%; height: 200px; display: block; object-fit: cover; object-position: center; opacity: 0.85;">
 
 <!-- ဓာတ်ပုံပေါ်တွင် စာသားနှင့် ခလုတ်များ တင်ခြင်း အပိုင်း -->
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 96%; text-align: center; color: #ffffff; z-index: 10;">
+  <div style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); width: 96%; text-align: center; color: #ffffff; z-index: 10;">
     
     <!-- မူပိုင်ခွင့် ရှင်းလင်းချက် စာသားတို -->
     <p style="font-size: 10px; text-shadow: 1px 1px 4px rgba(0,0,0,0.9); margin-bottom: 12px; line-height: 1.4;">
