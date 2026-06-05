@@ -11,8 +11,6 @@
 * [လေ့လာမှုနှင့်သုတေသနများ](./research.html) - မြို့နယ်တွင်း လေ့လာမှုသုတေသနအမျိုးမျိုးနှင့် ရလဒ်များ။
 * [သတင်းနှင့်လှုပ်ရှားမှုများ](./activity.html) - မော်ကွန်းတိုက်၏ လှုပ်ရှားဆောင်ရွက်မှုများနှင့် ရပ်ရွာ၏ကူညီပံပို့မှုများ။
 
----
-
 <style>
   .page-header {
     padding: 4rem 5rem !important; 
@@ -32,7 +30,7 @@
 
   /* ဤအပိုင်းအသစ်ကို ထည့်သွင်းလိုက်ပါသည် */
   .main-content {
-    max-width: 75rem !important; 
+    max-width: 65rem !important; 
     padding: 2rem 4rem !important;
   }
 
