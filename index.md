@@ -30,7 +30,7 @@
     display: none !important;
   }
 
-  /* ပုံနှင့် စာသားများ တွဲလျက်ပေါ်စေရန် စနစ်တကျ CSS သီးသန့်ထုတ်လိုက်ခြင်း */
+  /* ပင်မအိမ်အမြင့်ကို ၂၆၀ အထိ ကန့်သတ်ပြီး နေရာချခြင်း */
   .p-banner {
     position: relative; 
     width: auto; 
@@ -39,45 +39,51 @@
     margin-top: 30px; 
     margin-bottom: 0px; 
     overflow: hidden; 
-    height: 250px;
+    height: 260px;
   }
+  /* ပုံကို နဂိုအလင်း ၈၅% အတိုင်း ပြန်ထားခြင်း */
   .p-banner img {
     width: 100%; 
-    height: 250px; 
+    height: 260px; 
     display: block; 
     object-fit: cover; 
     object-position: center; 
-    opacity: 0.35; /* စာသားထင်းခနဲ ပေါ်လာအောင် ပုံကို နည်းနည်း မှောင်ချထားပါသည် */
+    opacity: 0.85; 
   }
+  /* စာသားနှင့်ခလုတ်များပါဝင်မည့် အစုအဖွဲ့ကို ကွက်တိ ဗဟိုချခြင်း */
   .p-content {
     position: absolute; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    width: 90%; 
+    width: 94%; 
     text-align: center; 
-    z-index: 999; /* အပေါ်ဆုံးမှာ ရှိနေစေရန် */
+    z-index: 9999 !important; /* လုံးဝအပေါ်ဆုံးသို့ ဆွဲတင်ခြင်း */
   }
   .p-buttons {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
   .p-btn {
     display: inline-block; 
     padding: 6px 16px; 
-    background: rgba(0, 0, 0, 0.6) !important; /* ခလုတ်ကို ပိုထင်ရှားအောင် နောက်ခံအမည်းရောင် ပေးထားပါသည် */
+    background: rgba(0, 0, 0, 0.75) !important; /* ပုံလင်းနေသဖြင့် ခလုတ်နောက်ခံကို ပိုမှောင်ပေးထားပါသည် */
     color: #ffffff !important; 
     text-decoration: none; 
     font-size: 12px; 
-    border: 1px solid rgba(255,255,255,0.6); 
+    border: 1px solid rgba(255,255,255,0.8); 
     border-radius: 4px; 
     margin: 0 5px;
+    font-weight: bold;
   }
+  /* စာသားများ ပုံပေါ်တွင် ကွက်တိပေါ်စေရန် Block element ပြောင်းလဲခြင်း */
   .p-text {
+    display: block;
     font-size: 11px !important; 
     color: #ffffff !important;
-    text-shadow: 2px 2px 4px rgba(0,0,0,1); /* စာသားနောက်ခံ ရိပ်ဖြတ်ပေးထားပါသည် */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1), -2px -2px 5px rgba(0, 0, 0, 1), 2px -2px 5px rgba(0, 0, 0, 1), -2px 2px 5px rgba(0, 0, 0, 1); /* ပုံလင်းသဖြင့် စာသားပတ်လည်ကို အမည်းရိပ် အထူကြီး ချပေးထားပါသည် */
     margin: 0; 
     line-height: 1.4;
+    font-family: sans-serif;
   }
 </style>
 
@@ -88,8 +94,8 @@
       <a href="./about.html" class="p-btn">About Us</a>
       <a href="./contact.html" class="p-btn">How to Contribute</a>
     </div>
-    <p class="p-text">
+    <span class="p-text">
       This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references. If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
-    </p>
+    </span>
   </div>
 </div>
