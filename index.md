@@ -34,7 +34,7 @@
     padding: 2rem 4rem 0rem !important;
   }
 
-  /* ပင်မအိမ်အမြင့်ကို ၂၆၀ အထိ ကန့်သတ်ပြီး နေရာချခြင်း */
+  /* ပင်မအိမ်အမြင့်ကို ၂၂၀ အထိ ကန့်သတ်ပြီး နေရာချခြင်း */
   .p-banner {
     position: relative; 
     width: auto; 
@@ -43,12 +43,12 @@
     margin-top: 30px; 
     margin-bottom: -50px; 
     overflow: hidden; 
-    height: 200px;
+    height: 220px;
   }
   /* ပုံကို နဂိုအလင်း ၈၅% အတိုင်း ပြန်ထားခြင်း */
   .p-banner img {
     width: 100%; 
-    height: 200px; 
+    height: 220px; 
     display: block; 
     object-fit: cover; 
     object-position: center; 
