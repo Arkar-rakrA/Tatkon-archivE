@@ -6,3 +6,11 @@
 
 // View on GitHub အပါအဝင် ခလုတ်အားလုံးကို ဇွတ်ဖျောက်ခိုင်းတဲ့ ကုဒ်
 .btn { display: none !important; }
+@import "{{ site.theme }}";
+
+// View on GitHub အပါအဝင် ခလုတ်အားလုံးကို ဖျောက်သည်
+.btn { display: none !important; }
+
+// အောက်က စာမျက်နှာအဖြူထဲမှာ အလိုအလျောက် ထပ်ပေါ်နေတဲ့ Title နဲ့ Description ကို ဖျောက်သည်
+.main-content h1:first-of-type { display: none !important; }
+.main-content p:first-of-type { display: none !important; }
