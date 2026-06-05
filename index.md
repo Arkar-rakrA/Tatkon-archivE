@@ -26,23 +26,21 @@
     display: none !important;
   }
 
-  /* ဤအပိုင်းအသစ်ကို ထည့်သွင်းလိုက်ပါသည် */
   .main-content {
     max-width: 60rem !important; 
     padding: 2rem 2rem 0rem !important;
     margin-bottom: 0rem !important;
   }
-  /* List အစုအဖွဲ့ရဲ့ အောက်ခြေ Margin ကိုပါ ထပ်မံ ဖြုတ်ပစ်ခြင်း */
+
   .main-content ul {
     margin-bottom: 0rem !important; 
     padding-bottom: 0rem !important;
   }
-  /* အညွှန်းစာကြောင်းတစ်ခုချင်းစီကို အပေါ်အောက် 12px စီ ခွာပေးလိုက်ခြင်း */
+
   .main-content li {
     margin-bottom: 6px !important; 
   }
   
-  /* ပင်မအိမ်အမြင့်ကို ၂၂၀ အထိ ကန့်သတ်ပြီး နေရာချခြင်း */
   .p-banner {
     position: relative; 
     width: auto; 
@@ -53,7 +51,7 @@
     overflow: hidden; 
     height: 200px;
   }
-  /* ပုံကို နဂိုအလင်း ၈၅% အတိုင်း ပြန်ထားခြင်း */
+  
   .p-banner img {
     width: 100%; 
     height: 200px; 
@@ -62,7 +60,7 @@
     object-position: center; 
     opacity: 0.99; 
   }
-  /* စာသားနှင့်ခလုတ်များပါဝင်မည့် အစုအဖွဲ့ကို ကွက်တိ ဗဟိုချခြင်း */
+  
   .p-content {
     position: absolute; 
     top: 65%; 
@@ -87,7 +85,7 @@
     margin: 0 5px;
     font-weight: bold;
   }
-  /* စာသားများ ပုံပေါ်တွင် ကွက်တိပေါ်စေရန် Block element ပြောင်းလဲခြင်း */
+  
   .p-text {
     display: block;
     font-size: 10px !important; 
@@ -107,7 +105,7 @@
       <a href="./contact.html" class="p-btn">How to Contribute</a>
     </div>
     <span class="p-text">
-      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines.<br> Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references.<br> If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
+      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines.<br> Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references.<br> If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
     </span>
   </div>
 </div>
