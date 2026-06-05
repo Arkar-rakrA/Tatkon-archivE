@@ -1,6 +1,6 @@
 <br>
 
-<h2 style="margin-top: -10px; margin-bottom: 10px;">မော်ကွန်းတိုက်အညွှန်း</h2>
+<h2 style="margin-top: -15px; margin-bottom: 15px;">မော်ကွန်းတိုက်အညွှန်း</h2>
 
 * [တပ်ကုန်းမြို့နယ်နောက်ခံသမိုင်း](./township-history.html) - ဒေသတွင်း မြို့နယ်အဆင့် ခေတ်အဆက်ဆက် နောက်ခံသမိုင်း။
 * [တပ်ကုန်းမြို့သမိုင်း](./town-history.html) - မြို့၏ နောက်ခံသမိုင်းကြောင်း။
@@ -30,7 +30,7 @@
 
   /* ဤအပိုင်းအသစ်ကို ထည့်သွင်းလိုက်ပါသည် */
   .main-content {
-    max-width: 50rem !important; 
+    max-width: 60rem !important; 
     padding: 2rem 4rem 0rem !important;
   }
 
