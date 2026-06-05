@@ -32,6 +32,12 @@
   .main-content {
     max-width: 60rem !important; 
     padding: 2rem 2rem 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+  /* List အစုအဖွဲ့ရဲ့ အောက်ခြေ Margin ကိုပါ ထပ်မံ ဖြုတ်ပစ်ခြင်း */
+  .main-content ul {
+    margin-bottom: 0rem !important; 
+    padding-bottom: 0rem !important;
   }
   /* အညွှန်းစာကြောင်းတစ်ခုချင်းစီကို အပေါ်အောက် 12px စီ ခွာပေးလိုက်ခြင်း */
   .main-content li {
