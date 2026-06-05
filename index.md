@@ -15,7 +15,7 @@
   }
   .project-name {
     font-size: 2.5rem !important; 
-    margin-bottom: 1rem !important;
+    margin-bottom: 1.5rem !important;
   }
   .project-tagline {
     font-size: 1rem !important;
