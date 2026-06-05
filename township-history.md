@@ -1,3 +1,11 @@
+---
+
+layout: default
+title: တပ်ကုန်းမြို့နယ်နောက်ခံသမိုင်း
+description: အကျဉ်းချုပ်
+
+---
+
 # တပ်ကုန်းမြို့နယ်နောက်ခံသမိုင်း
 
 <br>
@@ -187,3 +195,7 @@
 
 ---
 [ပင်မစာမျက်နှာသို့ ပြန်သွားရန်](./index.html)
+
+<style>
+  .site-footer { display: none !important; }
+</style>
