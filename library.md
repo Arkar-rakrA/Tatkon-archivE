@@ -13,7 +13,7 @@ description: သမိုင်းမှတ်တမ်းများ၊ အစ
 * 📂 [ဗြိတိသျှအုပ်ချုပ်ရေးအစီရင်ခံစာများ](./library/british-reports/report-list.html)
 
 ---
-[display: none ပြုလုပ်ရန် CSS သုံးထားခြင်း]
+
 <style>.site-footer { display: none !important; }</style>
 
 [ပင်မစာမျက်နှာသို့ ပြန်သွားရန်](./index.html)
