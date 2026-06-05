@@ -32,7 +32,7 @@
 
   /* ဤအပိုင်းအသစ်ကို ထည့်သွင်းလိုက်ပါသည် */
   .main-content {
-    max-width: 90rem !important; 
+    max-width: 75rem !important; 
     padding: 2rem 4rem !important;
   }
 
