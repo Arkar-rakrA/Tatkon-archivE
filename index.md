@@ -92,3 +92,16 @@
     font-family: sans-serif;
   }
 </style>
+
+<div class="p-banner">
+  <img src="./assets/images/Tatkon-Sat-Image-1.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်">
+  <div class="p-content">
+    <div class="p-buttons">
+      <a href="./about.html" class="p-btn">About Us</a>
+      <a href="./contact.html" class="p-btn">How to Contribute</a>
+    </div>
+    <span class="p-text">
+      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. Content without explicit direct clearance will only be featured through analytical summaries and properly credited references. If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, please feel free to reach out to us: tatkon-archive@gmail.com
+    </span>
+  </div>
+</div>
