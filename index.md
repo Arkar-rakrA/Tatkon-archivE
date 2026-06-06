@@ -71,7 +71,7 @@
     z-index: 9999 !important; 
   }
   .p-buttons {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
   .p-btn {
     display: inline-block; 
