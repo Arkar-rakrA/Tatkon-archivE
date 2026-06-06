@@ -41,7 +41,7 @@
     margin-bottom: 6px !important; 
   }
   
-  /* 🛠 အစ်ကို့ရဲ့ နဂို မူလ Banner ကုဒ် (အချိုးအစားနှင့် အရောင်အသွေးကို ရာနှုန်းပြည့် ပြန်ထိန်းထားသည်) */
+  /* 🛠 အစ်ကို့ရဲ့ နဂို မူလ Banner အကျယ်အဝန်း စနစ် */
   .p-banner {
     position: relative; 
     width: auto; 
@@ -51,9 +51,6 @@
     margin-bottom: -50px; 
     overflow: hidden; 
     height: 200px;
-    
-    /* 🔥 မျက်နှာပြင် သေးသွားရင် အတွင်းထဲက အရာအားလုံးကို အချိုးကျကျ (Scale) သေးသွားစေရန် Container Scope သတ်မှတ်ခြင်း */
-    container-type: inline-size;
   }
   
   .p-banner img {
@@ -65,7 +62,7 @@
     opacity: 0.99; 
   }
   
-  /* 🛠 အစ်ကို့ရဲ့ နဂို Content Box (Position 65% တိုင်း ကွက်တိ ပြန်ယူထားသည်) */
+  /* 🛠 🔥 အစ်ကို့ရဲ့ နဂို ဒီဇိုင်း၊ Alignment၊ Size အားလုံးကို ရာနှုန်းပြည့် ပုံသေဆောက်ထားသည့် Content Box */
   .p-content {
     position: absolute; 
     top: 65%; 
@@ -74,13 +71,15 @@
     width: 75%; 
     text-align: center; 
     z-index: 9999 !important; 
+    transform-origin: center center; /* အလယ်ဗဟိုကနေပဲ အချိုးကျ ကျုံ့စေရန် */
+    white-space: nowrap; /* စာကြောင်းတွေ အောက်ကို လုံးဝ (လုံးဝ) ခေါက်မဆင်းစေရန် တားဆီးခြင်း */
   }
   
   .p-buttons {
     margin-bottom: 24px;
   }
   
-  /* 🛠 အစ်ကို့ရဲ့ နဂို ခလုတ်ဒီဇိုင်း (Padding 6px 16px, Font 12px တိုင်း ကွက်တိ) */
+  /* အစ်ကို့ မူလ ခလုတ် Size အသေ */
   .p-btn {
     display: inline-block; 
     padding: 6px 16px; 
@@ -94,51 +93,37 @@
     font-weight: bold;
   }
   
-  /* 🛠 အစ်ကို့ရဲ့ နဂို စာသားစတိုင် (Font 10px, Line-height 1.4, Text-shadow အစုံအလင်ကို မထိခိုက်စေရ) */
+  /* အစ်ကို့ မူလ စာသား Size အသေနှင့် Alignment (အလယ်ကွက်တိ ပြန်ဖြစ်စေရန် Center ထိန်းထားပါသည်) */
   .p-text {
     display: block;
     font-size: 10px !important; 
     color: #ffffff !important;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1), -1px -1px 1px rgba(0, 0, 0, 0.1), 1px -1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1); 
-    margin: 0; 
+    margin: 0 auto; 
     line-height: 1.4;
     font-family: sans-serif;
-    white-space: nowrap; /* 🔥 စာကြောင်းတွေ အောက်ကို ဖြတ်ပြီး ခေါက်မဆင်းစေရန် အတင်းတားဆီးခြင်း */
+    text-align: center !important; /* ဘယ်ကပ်သွားတာကို ပြန်ပြီး အလယ်ညှိပေးခြင်း */
   }
 
-  /* 🛠 🔥 ခေတ်မီ Container Queries စနစ်ဖြင့် Window ကျုံ့သွားပါက မူလပုံစံမပျက် တစ်ပြိုင်နက်တည်း သေးပေးခြင်း */
-  @container (max-width: 850px) {
+  /* 🛠 🔥 ဘရောက်ဆာ ဝင်းဒိုး သေးသွားပါက အစ်ကို့ ဒီဇိုင်းတစ်ခုလုံးကို အချိုးအစားမပျက် (Scale Down) သေးချပစ်မည့် စနစ် */
+  @media (max-width: 900px) {
     .p-content {
-      width: 95%; /* မျက်နှာပြင်ကျဉ်းချိန် ဘေးမလျှံစေရန် */
+      transform: translate(-50%, -50%) scale(0.85); /* ဒီဇိုင်းတစ်ခုလုံးကို ပုံတစ်ပုံလို 85% ချုံ့သည် */
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .p-content {
+      transform: translate(-50%, -50%) scale(0.7);  /* 70% အထိ အချိုးကျ ချုံ့သည် */
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .p-content {
+      transform: translate(-50%, -50%) scale(0.55); /* ဖုန်း Screen အထိ သေးသွားရင် 55% ချုံ့သည် */
       top: 60%;
-    }
-    .p-buttons {
-      margin-bottom: 12px; /* ခလုတ်နှင့် စာသား ကြားအကွာအဝေးကို အချိုးကျ လျှော့ချခြင်း */
-    }
-    .p-btn {
-      padding: 4px 10px;  /* ခလုတ် အရွယ်အစားကို အချိုးကျ သေးပေးခြင်း */
-      font-size: 9px;
-      margin: 0 2px;
-    }
-    .p-text {
-      font-size: 8px !important; /* စာလုံးကို စာကြောင်းမခေါက်ဘဲ ပုံစံအတိုင်း သေးသွားစေခြင်း */
-      line-height: 1.3;
-    }
-  }
-
-  @container (max-width: 550px) {
-    .p-content {
-      top: 55%;
-    }
-    .p-buttons {
-      margin-bottom: 6px;
-    }
-    .p-btn {
-      padding: 3px 6px;
-      font-size: 7px;
-    }
-    .p-text {
-      font-size: 6.5px !important; /* ဖုန်းမျက်နှာပြင်အထိ သေးသွားသော်လည်း စာကြောင်းလုံးဝ မခေါက်ဘဲ အချိုးကျကျ ရှိနေစေခြင်း */
     }
   }
 </style>
