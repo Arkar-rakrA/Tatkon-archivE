@@ -66,7 +66,7 @@
     top: 65%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    width: 75%; 
+    width: 65%; 
     text-align: center; 
     z-index: 9999 !important; 
   }
