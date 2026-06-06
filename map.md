@@ -26,26 +26,32 @@ description: တပ်ကုန်းမြို့နယ်၏ ခေတ်အ
     display: none !important; 
   }
 
-  /* 🛠 မြေပုံကို မျက်နှာပြင်အပြည့် (Full Width) ဖြစ်အောင် Main Layout ကို ချဲ့ခြင်း */
-  .main-content {
-    max-width: 100% !important; /* ဘေးဘောင်တွေကို အစွန်းအထိ ကပ်ပစ်ခြင်း */
-    padding: 0 !important;      /* ဘေးပတ်ပတ်လည် ကွက်လပ် (Padding) အကုန်ဖြုတ်ခြင်း */
-    margin: 0 !important;
+  /* 🛠 🔥 မြေပုံကို ဘေးအပြည့် ကပ်သွားအောင် ဖြစ်နိုင်ခြေရှိသမျှ ဘောင်အားလုံးကို ဖျက်ချခြင်း */
+  .main-content, 
+  .wrapper, 
+  .container,
+  #main_content {
+    max-width: 100% !important;   /* ဘေးဘောင်ကို ရာခိုင်နှုန်းအပြည့် ချဲ့သည် */
+    width: 100% !important;
+    padding: 0px !important;       /* ဘေးက Padding ဖြူဖြူတွေကို လုံးဝ ဖျက်သည် */
+    margin: 0px auto !important;
   }
 
   /* 🛠 မြေပုံ Frame အလှအပအတွက် CSS */
   .map-frame-container {
-    width: 100%;
-    height: calc(100vh - 140px); /* ကွန်ပျူတာ Screen ရဲ့ အမြင့်အပြည့်ထဲက ကာလာဘားအမြင့်ကို နှုတ်ပြီး နေရာယူခြင်း */
+    width: 100% !important;
+    height: calc(100vh - 140px);   /* Screen အမြင့်အပြည့် ယူသည် */
     position: relative;
     overflow: hidden;
+    padding: 0px !important;
+    margin: 0px !important;
   }
 
   iframe.web-map {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    display: block !important;
   }
 </style>
 
