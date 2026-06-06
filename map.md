@@ -50,5 +50,5 @@ description: တပ်ကုန်းမြို့နယ်၏ ခေတ်အ
 </style>
 
 <div class="map-frame-container">
-  <iframe src="./map/qgis2web_2026_06_06-11_43_43_866084/index.html" class="web-map"></iframe>
+  <iframe src="./map/qgis2web_2026_06_06-12_56_09_075256/index.html" class="web-map"></iframe>
 </div>
