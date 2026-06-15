@@ -12,7 +12,7 @@
 <style>
   /* For Desktop */
   .page-header {
-    padding: 4rem 5rem !important; 
+    padding: 2rem 5rem !important; 
   }
   .project-name {
     font-size: 2.5rem !important; 
