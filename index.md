@@ -28,7 +28,7 @@
   }
 
   .main-content {
-    max-width: 55rem !important; 
+    max-width: 60rem !important; 
     padding: 2rem 2rem 0rem !important;
     margin-bottom: 0rem !important; 
   }
