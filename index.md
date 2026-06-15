@@ -30,7 +30,8 @@
   .main-content {
     max-width: 55rem !important; 
     padding: 2rem 2rem 0rem !important;
-    margin-bottom: 0rem !important;
+    /* 🛠 အောက်ခြေ Banner ပုံနှင့် ကပ်မနေစေရန် Desktop ပေါ်တွင် Space ချန်ထားခြင်း */
+    margin-bottom: 3.5rem !important; 
   }
 
   .main-content ul {
@@ -108,21 +109,26 @@
     }
     .project-tagline {
       font-size: 0.8rem !important;
+      line-height: 1.5 !important;
+      /* 🌟 "သည့် ဒီဂျစ်တယ်မော်ကွန်းတိုက်" အောက်ကြောင်းမကွဲစေရန် ကာကွယ်ခြင်း */
+      word-break: keep-all !important; 
+      overflow-wrap: break-word !important;
     }
     .project-tagline br {
       display: none !important; 
     }
 
-    /* ၂။ 🔥 🛠 အလယ်က Main Content (မော်ကွန်းတိုက်အညွှန်း) ကြီး ပြူးမနေအောင် အချိုးကျ သေးချခြင်း */
+    /* ၂။ အလယ်က Main Content (မော်ကွန်းတိုက်အညွှန်း) ပိုင်း ပြင်ဆင်ချက် */
     .main-content h2 {
-      font-size: 1.25rem !important; /* "မော်ကွန်းတိုက်အညွှန်း" ခေါင်းစဉ်ကို သေးပေးခြင်း */
-      margin-bottom: 10px !important;
+      font-size: 1.15rem !important; /* 🛠 မိုဘိုင်းပေါ်တွင် ကြီးမနေစေရန် ၁.၂၅ မှ ၁.၁၅ သို့ ထပ်မံ လျှော့ချခြင်း */
+      margin-bottom: 12px !important;
     }
     .main-content {
-      padding: 1.5rem 1.2rem 0rem !important; /* ဖုန်းပေါ်မှာ ဘေးဘောင်ကျဉ်းကျဉ်းလေးပဲ ချန်ခြင်း */
+      padding: 1.5rem 1.2rem 0rem !important; 
+      margin-bottom: 2.5rem !important; /* 🛠 မိုဘိုင်းပေါ်တွင်လည်း အောက်ခြေပုံနှင့် မကပ်စေရန် Space တိုးချန်ခြင်း */
     }
     .main-content li {
-      font-size: 0.82rem !important; /* 🌟 လင့်ခ်စာသားများနှင့် နောက်က ရှင်းလင်းချက်များကို ၈၂% အထိ အချိုးကျ သေးပေးခြင်း */
+      font-size: 0.82rem !important; 
       line-height: 1.5 !important;
       margin-bottom: 8px !important;
     }
@@ -147,8 +153,11 @@
 
   /* 📱 🛠 ဖုန်းအသေးစားလေးများ (Screen 420px အောက်) အတွက် ထပ်မံ ချိန်ညှိခြင်း */
   @media (max-width: 420px) {
+    .main-content {
+      margin-bottom: 2rem !important; /* ဖုန်းအသေးလေးတွေမှာလည်း အောက်ခြေ Space ကွက်တိဖြစ်စေရန် */
+    }
     .main-content li {
-      font-size: 0.76rem !important; /* ဖုန်းအရမ်းသေးရင် စာလုံးကို ထပ်လျှော့ပေးခြင်း */
+      font-size: 0.76rem !important; 
     }
     .p-content {
       transform: translate(-50%, -50%) scale(0.58); 
