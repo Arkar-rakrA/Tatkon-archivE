@@ -104,7 +104,7 @@
       padding: 1.5rem 1rem !important;
     }
     .project-name {
-      font-size: 1.5rem !important; /* ခေါင်းစဉ် စာလုံးမခေါက်အောင် သေးပေးခြင်း */
+      font-size: 1.4rem !important; /* ခေါင်းစဉ် စာလုံးမခေါက်အောင် သေးပေးခြင်း */
     }
     .project-tagline {
       font-size: 0.8rem !important;
