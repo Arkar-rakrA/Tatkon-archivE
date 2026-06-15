@@ -197,5 +197,15 @@ description: အထင်ကရကျေးရွာများ၊ နေရာ
     .main-content h3 { font-size: 1.1rem !important; }
     .main-content p, .read-more-content { font-size: 0.88rem !important; }
     summary { font-size: 0.85rem !important; }
+    
+    /* 🆕 ဤကုဒ်အသစ်ကို ဖြည့်စွက်ပေးပါ */
+    .mobile-break {
+      display: inline !important;
+    }
+  }
+
+  /* 🖥 Desktop ပေါ်တွင် အဆိုပါ ဖြတ်တောက်မှုကို အသက်မဝင်စေရန် (ကျန်ခဲ့သည့် Style အပြင်ဘက်တွင် ထားပါ) */
+  .mobile-break {
+    display: none;
   }
 </style>
