@@ -130,11 +130,11 @@
     }
 
     .p-banner {
-      margin-top: 20px !important; 
-      height: 130px; 
+      margin-top: 15px !important; 
+      height: 120px; 
     }
     .p-banner img {
-      height: 110px;
+      height: 120px;
     }
     .p-content {
       top: 50%;
@@ -168,7 +168,7 @@
       <a href="./contact.html" class="p-btn">How to Contribute</a>
     </div>
     <span class="p-text">
-      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. <br> All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. <br> Content without explicit direct clearance will only be featured through analytical summaries and properly credited references.<br> If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, <br> please feel free to reach out to us: tatkon-archive@gmail.com
+      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. <br> All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. <br> Content without explicit direct clearance will only be featured through analytical summaries and properly credited references.<br> If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, <br> please feel free to reach out to us: tatkon.archive@gmail.com
     </span>
   </div>
 </div>
