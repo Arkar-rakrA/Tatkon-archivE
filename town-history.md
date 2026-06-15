@@ -59,3 +59,125 @@ description: အနှစ်ချုပ်
 ---
 
 [ပင်မစာမျက်နှာသို့ ပြန်သွားရန်](./index.html)
+
+<style>
+  /* 🖥 ဤအပိုင်းသည် Desktop ပေါ်တွင် စာလုံး Size များနှင့် Layout ကို ပိုကျစ်လစ်စေရန် ဖြစ်သည် */
+  .page-header {
+    padding: 2rem 5rem !important; /* Home Page နှင့် တစ်ပြေးညီ အမြင့်ကို ညှိခြင်း */
+  }
+  .project-name {
+    font-size: 2.5rem !important; 
+    margin-bottom: 1rem !important;
+  }
+  .project-tagline {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  footer.site-footer, .site-footer {
+    display: none !important;
+  }
+
+  /* Main Content အကျယ်ကို 60rem ထားပြီး စာလုံးများကို မျက်စိမညောင်းစေရန် ညှိခြင်း */
+  .main-content {
+    max-width: 60rem !important; 
+    padding: 2.5rem 2rem 3rem !important;
+    font-family: sans-serif;
+    color: #2b2b2b;
+    line-height: 1.65 !important;
+  }
+
+  /* ခေါင်းစဉ်ကြီး (H1) ကို ချုံ့ပြီး အထာကျစေရန် */
+  .main-content h1 {
+    font-size: 2.2rem !important;
+    font-weight: bold;
+    margin-top: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3rem;
+  }
+
+  /* ခေါင်းစဉ်ခွဲ (H2) စာလုံး Size ကို ညှိခြင်း */
+  .main-content h2 {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    color: #155799; /* Cayman Theme နှင့် လိုက်ဖက်သော ကာလာ */
+  }
+
+  /* Sub-heading (H3) များကိုပါ လိုက်ညှိခြင်း */
+  .main-content h3 {
+    font-size: 1.15rem !important;
+    font-weight: bold;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* စာပိုဒ် (Paragraph) စာလုံး Size ကို အနေတော် 14px/15px ဝန်းကျင် ဖြစ်အောင် ညှိခြင်း */
+  .main-content p {
+    font-size: 0.95rem !important;
+    margin-bottom: 1.2rem !important;
+    text-align: justify; /* စာကြောင်းဘယ်ညာ ညီညာပြီး သပ်ရပ်စေရန် */
+  }
+
+  /* **စစ်စခန်းချရာကုန်းမြင့်** စသည့် Bolding စာသားများကို အရောင်နည်းနည်း ပေါ်လွင်စေရန် */
+  .main-content strong, .main-content b {
+    color: #000;
+    font-weight: bold;
+  }
+
+  /* Horizontal Rule (မြှားလိုင်းတား) များကို သပ်ရပ်စေရန် */
+  .main-content hr {
+    height: 1px !important;
+    background-color: #eaecef !important;
+    border: none !important;
+    margin: 2rem 0 !important;
+  }
+
+  /* 📱 🛠 ဤအပိုင်းသည် မိုဘိုင်းဖုန်းပေါ်တွင် စာလုံး Size များ လုံးဝ အချိုးကျ စနစ်တကျ ဖြစ်စေရန် ဖြစ်သည် */
+  @media (max-width: 768px) {
+    .page-header {
+      padding: 1.5rem 1rem !important;
+    }
+    .project-name {
+      font-size: 1.4rem !important; 
+    }
+    .project-tagline {
+      font-size: 0.8rem !important;
+      line-height: 1.5 !important;
+    }
+
+    .main-content {
+      padding: 1.5rem 1.2rem 2rem !important; 
+    }
+
+    /* မိုဘိုင်းပေါ်က စာလုံး Size များအားလုံးကို ဖတ်ရလွယ်အောင် ချုံ့ခြင်း */
+    .main-content h1 {
+      font-size: 1.5rem !important;
+      margin-bottom: 1rem !important;
+    }
+    .main-content h2 {
+      font-size: 1.25rem !important;
+      margin-top: 1.5rem !important;
+      margin-bottom: 0.8rem !important;
+    }
+    .main-content h3 {
+      font-size: 1.05rem !important;
+      margin-top: 1.2rem !important;
+    }
+    .main-content p {
+      font-size: 0.88rem !important; /* ဖုန်းစခရင်နှင့် ကွက်တိဖြစ်မည့် စာလုံး Size */
+      line-height: 1.6 !important;
+    }
+  }
+
+  /* 📱 ဖုန်းအသေးစားလေးများအတွက် ထပ်မံ အချောသတ်ခြင်း */
+  @media (max-width: 420px) {
+    .main-content p {
+      font-size: 0.85rem !important; 
+    }
+    .main-content h1 { font-size: 1.35rem !important; }
+    .main-content h2 { font-size: 1.15rem !important; }
+  }
+</style>
