@@ -10,6 +10,7 @@
 * [သတင်းနှင့်လှုပ်ရှားမှုများ](./activity.html) - မော်ကွန်းတိုက်၏ လှုပ်ရှားဆောင်ရွက်မှုများနှင့် ရပ်ရွာ၏ကူညီပံ့ပို့မှုများ။
 
 <style>
+  /* 🖥 ဤအပိုင်းသည် Desktop ပေါ်တွင် အစ်ကို ညှိထားသော မူလအတိုင်း ရာနှုန်းပြည့် ဖြစ်သည် */
   .page-header {
     padding: 4rem 5rem !important; 
   }
@@ -95,17 +96,59 @@
     line-height: 1.4;
     font-family: sans-serif;
   }
+
+  /* 📱 🛠 ဤအပိုင်းသည် မိုဘိုင်းဖုန်း (သို့မဟုတ် Screen အကျယ် 768px ထက်သေးသော စက်များ) အတွက်သာ အလုပ်လုပ်မည် */
+  @media (max-width: 768px) {
+    /* ၁။ ဖုန်းပေါ်တွင် အပေါ်ခေါင်းစဉ်ဘား ကွက်တိဖြစ်အောင် Padding လျှော့ချခြင်း */
+    .page-header {
+      padding: 1.5rem 1rem !important;
+    }
+    .project-name {
+      font-size: 1.4rem !important; /* ခေါင်းစဉ် စာလုံးမခေါက်အောင် သေးပေးခြင်း */
+    }
+    .project-tagline {
+      font-size: 0.8rem !important;
+    }
+    .project-tagline br {
+      display: none !important; /* config ထဲက <br> ကြောင့် ဖုန်းမှာ စာကြောင်းမပြတ်သွားစေရန် ကာကွယ်ခြင်း */
+    }
+
+    /* ၂။ ဖုန်းပေါ်တွင် Banner အတွင်းရှိ အရာအားလုံးကို အချိုးကျ ပုံသေ (Scale Down) သေးချပစ်ခြင်း */
+    .p-banner {
+      height: 140px; /* ဖုန်းအမြင့်နှင့် မျှတအောင် လျှော့ခြင်း */
+    }
+    .p-banner img {
+      height: 140px;
+    }
+    .p-content {
+      top: 50%;
+      width: 100%;
+      /* 🌟 Banner တစ်ခုလုံးကို ဓာတ်ပုံတစ်ပုံလို ၇၀ ရာခိုင်နှုန်းအထိ အချိုးကျကျ ကျုံ့ပေးမည့် မော်မှန်ကုဒ် */
+      transform: translate(-50%, -50%) scale(0.72); 
+      transform-origin: center center;
+    }
+    .p-content br {
+      display: inline !important; /* Disclaimer ထဲက စာကြောင်းဖြတ်တောက်မှုကို မူလအတိုင်း ထိန်းထားသည် */
+    }
+  }
+
+  /* 📱 🛠 ဖုန်းအသေးစားလေးများ (Screen 420px အောက်) အတွက် ထပ်မံ Scale ချုံ့ခြင်း */
+  @media (max-width: 420px) {
+    .p-content {
+      transform: translate(-50%, -50%) scale(0.58); /* ၅၈ ရာခိုင်နှုန်းအထိ အချိုးကျ ထပ်မံသေးပေးခြင်း */
+    }
+  }
 </style>
 
 <div class="p-banner">
-  <img src="./assets/images/Tatkon-Sat-Image-1.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်">
-  <div class="p-content">
-    <div class="p-buttons">
-      <a href="./about.html" class="p-btn">About Us</a>
-      <a href="./contact.html" class="p-btn">How to Contribute</a>
-    </div>
-    <span class="p-text">
+  <img src="./assets/images/Tatkon-Sat-Image-1.png" alt="တပ်ကုန်းမြို့ မြင်ကွင်းကျယ်">
+  <div class="p-content">
+    <div class="p-buttons">
+      <a href="./about.html" class="p-btn">About Us</a>
+      <a href="./contact.html" class="p-btn">How to Contribute</a>
+    </div>
+    <span class="p-text">
       This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. <br> All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. <br> Content without explicit direct clearance will only be featured through analytical summaries and properly credited references.<br> If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, <br> please feel free to reach out to us: tatkon-archive@gmail.com
-    </span>
-  </div>
+    </span>
+  </div>
 </div>
