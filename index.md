@@ -97,25 +97,39 @@
     font-family: sans-serif;
   }
 
-  /* 📱 🛠 ဤအပိုင်းသည် မိုဘိုင်းဖုန်း (သို့မဟုတ် Screen အကျယ် 768px ထက်သေးသော စက်များ) အတွက်သာ အလုပ်လုပ်မည် */
+  /* 📱 🛠 ဤအပိုင်းသည် မိုဘိုင်းဖုန်း (Screen အကျယ် 768px ထက်သေးသောစက်များ) အတွက်သာ အလုပ်လုပ်မည် */
   @media (max-width: 768px) {
-    /* ၁။ ဖုန်းပေါ်တွင် အပေါ်ခေါင်းစဉ်ဘား ကွက်တိဖြစ်အောင် Padding လျှော့ချခြင်း */
+    /* ၁။ ခေါင်းစီးပိုင်း ချိန်ညှိခြင်း */
     .page-header {
       padding: 1.5rem 1rem !important;
     }
     .project-name {
-      font-size: 1.4rem !important; /* ခေါင်းစဉ် စာလုံးမခေါက်အောင် သေးပေးခြင်း */
+      font-size: 1.4rem !important; 
     }
     .project-tagline {
       font-size: 0.8rem !important;
     }
     .project-tagline br {
-      display: none !important; /* config ထဲက <br> ကြောင့် ဖုန်းမှာ စာကြောင်းမပြတ်သွားစေရန် ကာကွယ်ခြင်း */
+      display: none !important; 
     }
 
-    /* ၂။ ဖုန်းပေါ်တွင် Banner အတွင်းရှိ အရာအားလုံးကို အချိုးကျ ပုံသေ (Scale Down) သေးချပစ်ခြင်း */
+    /* ၂။ 🔥 🛠 အလယ်က Main Content (မော်ကွန်းတိုက်အညွှန်း) ကြီး ပြူးမနေအောင် အချိုးကျ သေးချခြင်း */
+    .main-content h2 {
+      font-size: 1.25rem !important; /* "မော်ကွန်းတိုက်အညွှန်း" ခေါင်းစဉ်ကို သေးပေးခြင်း */
+      margin-bottom: 10px !important;
+    }
+    .main-content {
+      padding: 1.5rem 1.2rem 0rem !important; /* ဖုန်းပေါ်မှာ ဘေးဘောင်ကျဉ်းကျဉ်းလေးပဲ ချန်ခြင်း */
+    }
+    .main-content li {
+      font-size: 0.82rem !important; /* 🌟 လင့်ခ်စာသားများနှင့် နောက်က ရှင်းလင်းချက်များကို ၈၂% အထိ အချိုးကျ သေးပေးခြင်း */
+      line-height: 1.5 !important;
+      margin-bottom: 8px !important;
+    }
+
+    /* ၃။ အောက်ခြေ Banner ပိုင်း အချိုးကျ ချုံ့ခြင်း */
     .p-banner {
-      height: 140px; /* ဖုန်းအမြင့်နှင့် မျှတအောင် လျှော့ခြင်း */
+      height: 140px; 
     }
     .p-banner img {
       height: 140px;
@@ -123,19 +137,21 @@
     .p-content {
       top: 50%;
       width: 100%;
-      /* 🌟 Banner တစ်ခုလုံးကို ဓာတ်ပုံတစ်ပုံလို ၇၀ ရာခိုင်နှုန်းအထိ အချိုးကျကျ ကျုံ့ပေးမည့် မော်မှန်ကုဒ် */
       transform: translate(-50%, -50%) scale(0.72); 
       transform-origin: center center;
     }
     .p-content br {
-      display: inline !important; /* Disclaimer ထဲက စာကြောင်းဖြတ်တောက်မှုကို မူလအတိုင်း ထိန်းထားသည် */
+      display: inline !important; 
     }
   }
 
-  /* 📱 🛠 ဖုန်းအသေးစားလေးများ (Screen 420px အောက်) အတွက် ထပ်မံ Scale ချုံ့ခြင်း */
+  /* 📱 🛠 ဖုန်းအသေးစားလေးများ (Screen 420px အောက်) အတွက် ထပ်မံ ချိန်ညှိခြင်း */
   @media (max-width: 420px) {
+    .main-content li {
+      font-size: 0.76rem !important; /* ဖုန်းအရမ်းသေးရင် စာလုံးကို ထပ်လျှော့ပေးခြင်း */
+    }
     .p-content {
-      transform: translate(-50%, -50%) scale(0.58); /* ၅၈ ရာခိုင်နှုန်းအထိ အချိုးကျ ထပ်မံသေးပေးခြင်း */
+      transform: translate(-50%, -50%) scale(0.58); 
     }
   }
 </style>
@@ -148,7 +164,7 @@
       <a href="./contact.html" class="p-btn">How to Contribute</a>
     </div>
     <span class="p-text">
-      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. <br> All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. <br> Content without explicit direct clearance will only be featured through analytical summaries and properly credited references.<br> If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, <br> please feel free to reach out to us: tatkon.archive@gmail.com
+      This is a non-profit, community-based digital archive managed by Tatkon-archivE for educational and cultural preservation purposes only. <br> All materials are published with permission or under general public interest guidelines. Full copyright remains with the original creators. <br> Content without explicit direct clearance will only be featured through analytical summaries and properly credited references.<br> If you would like to contribute historical data, photographs, or records to Tatkon-archivE, or if you have any inquiries regarding copyright and content clearance, <br> please feel free to reach out to us: tatkon-archive@gmail.com
     </span>
   </div>
 </div>
