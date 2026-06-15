@@ -261,7 +261,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
   .badge-infra     { background-color: #0366d6; } /* အပြာရောင် - အခြေခံအဆောက်အအုံ */
   .badge-disaster  { background-color: #d73a49; } /* အနီရောင် - ဘေးအန္တရာယ် */
 
-  /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း */
+/* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း */
   @media (max-width: 768px) {
     .page-header { padding: 1.5rem 1rem !important; }
     .project-name { font-size: 1.4rem !important; }
@@ -282,7 +282,20 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       width: 100%;
       text-align: left;
     }
-    table { font-size: 0.85rem; }
-    th, td { padding: 0.6rem; }
+    
+    /* ⚠️ မိုဘိုင်းဖုန်းအတွက် ကော်လံအကျယ်များကို ပြန်ညှိသည့်အပိုင်း (အသစ်) */
+    table { font-size: 0.82rem; }
+    th, td { padding: 0.5rem 0.4rem; }
+    
+    /* ကော်လံ တစ်ခုချင်းစီကို ဖုန်း screen ပေါ်မူတည်ပြီး ရာခိုင်နှုန်း ပြန်သတ်မှတ်ခြင်း */
+    th:nth-child(1), td:nth-child(1) { width: 22% !important; font-size: 0.8rem; } /* ရက်စွဲ */
+    th:nth-child(2), td:nth-child(2) { width: 18% !important; text-align: center; } /* ကဏ္ဍ (အကျဉ်းဆုံးထားမည်) */
+    th:nth-child(3), td:nth-child(3) { width: 60% !important; } /* ဖြစ်ရပ်မှတ်တမ်း (နေရာအများဆုံးပေးမည်) */
+    
+    /* Badge စာသားလေးတွေကို ဖုန်းပေါ်မှာ နည်းနည်း ထပ်သေးပေးခြင်း */
+    .badge {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.3rem;
+    }
   }
 </style>
