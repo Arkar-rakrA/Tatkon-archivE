@@ -15,18 +15,20 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     <label for="categoryFilter">🔍 ကဏ္ဍအလိုက် စစ်ထုတ်ရန်:</label>
     <select id="categoryFilter" onchange="filterTimeline()">
       <option value="all">အားလုံးပြရန်</option>
-      <option value="သမိုင်းဦး">သမိုင်းဦး / နောက်ခံ</option>
       <option value="အုပ်ချုပ်ရေး">အုပ်ချုပ်ရေး</option>
-      <option value="လမ်းပန်းဆက်သွယ်ရေး">လမ်းပန်းဆက်သွယ်ရေး</option>
-      <option value="သာသနာရေး">သာသနာရေး</option>
-      <option value="သဘာဝဘေး">သဘာဝဘေးအန္တရာယ်</option>
+      <option value="စီးပွားရေး">စီးပွားရေး</option>
+      <option value="လူမှုရေး">လူမှုရေး</option>
+      <option value="သဘာဝပတ်ဝန်းကျင်">သဘာဝပတ်ဝန်းကျင်</option>
+      <option value="ပညာ/ကျန်းမာ">ပညာကျန်းမာ</option>
+      <option value="အခြေခံအဆောက်အအုံ">အခြေခံအဆောက်အအုံ</option>
+      <option value="ဘေးအန္တရာယ်">ဘေးအန္တရာယ်</option>
     </select>
   </div>
 
   <div class="control-group">
     <label>📅 ရက်စွဲ စီရန်:</label>
-    <button class="btn-sort active" id="btnSortOld" onclick="sortTimeline('oldest')">⏳ ရှေးကျရာမှ အသစ်သို့</button>
-    <button class="btn-sort" id="btnSortNew" onclick="sortTimeline('newest')">⌛ အသစ်မှ ရှေးကျရာသို့</button>
+    <button class="btn-sort active" id="btnSortOld" onclick="sortTimeline('oldest')">⏳ အဟောင်းမှ အသစ်သို့</button>
+    <button class="btn-sort" id="btnSortNew" onclick="sortTimeline('newest')">⌛ အသစ်မှ အဟောင်းသို့</button>
   </div>
 </div>
 
@@ -40,36 +42,43 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       </tr>
     </thead>
     <tbody id="timelineBody">
-      <tr data-year="1146" data-category="သမိုင်းဦး">
+      
+      <tr data-year="1146" data-category="အုပ်ချုပ်ရေး">
         <td><b>၁၁၄၆ ခုနှစ်</b></td>
-        <td><span class="badge badge-history">သမိုင်းဦး</span></td>
-        <td>ဘိုးတော်ဘုရားစစ်တမ်းအရ ယနေ့ခေတ် တပ်ကုန်းမြို့သည် <b>"တလိုင်းသေရွာ"</b> နယ်နိမိတ်အတွင်း ပါဝင်ခဲ့ကြောင်း သမိုင်းဦးမှတ်တမ်း တွေ့ရှိရခြင်း။</td>
+        <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
+        <td>ဘိုးတော်ဘုရားစစ်တမ်းအရ ယနေ့ခေတ် တပ်ကုန်းမြို့တည်ရှိရာ နယ်မြေသည် <b>"တလိုင်းသေရွာ"</b> နယ်နိမိတ်အတွင်း ပါဝင်ခဲ့ကြောင်း အစောဆုံးမှတ်တမ်း တွေ့ရှိရခြင်း။</td>
       </tr>
-      <tr data-year="1904" data-category="လမ်းပန်းဆက်သွယ်ရေး">
+
+      <tr data-year="1904" data-category="အခြေခံအဆောက်အအုံ">
         <td><b>၁၉၀၄ ခုနှစ်</b></td>
-        <td><span class="badge badge-transit">လမ်းပန်းဆက်သွယ်ရေး</span></td>
-        <td>ကိုလိုနီခေတ်ဦး ရန်ကုန်-မန္တလေး ရထားလမ်းနှင့် ကားလမ်းများ ဖောက်လုပ်ခဲ့သဖြင့် လမ်းပန်းဆက်သွယ်ရေး အချက်အခြာကျပြီး ထင်ရှားလာခြင်း။</td>
+        <td><span class="badge badge-infra">အခြေခံအဆောက်အအုံ</span></td>
+        <td>ကိုလိုနီခေတ်ဦး ရန်ကုန်-မန္တလေး ရထားလမ်းနှင့် ကားလမ်းများ ဖောက်လုပ်ခဲ့သဖြင့် တပ်ကုန်းဘူတာ စတင်ပေါ်ပေါက်လာပြီး လမ်းပန်းဆက်သွယ်ရေး အချက်အခြာ ဖြစ်လာခြင်း။</td>
       </tr>
+
       <tr data-year="1951" data-category="အုပ်ချုပ်ရေး">
         <td><b>၁၉၅၁ ခုနှစ်</b></td>
         <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
-        <td>လွတ်လပ်ရေးရပြီးနောက် ပထမဆုံးမြို့ပိုင်အဖြစ် <b>ဦးထွန်းမောင်</b> စတင် တာဝန်ထမ်းဆောင်ခြင်း။</td>
+        <td>လွတ်လပ်ရေးရပြီးနောက် တပ်ကုန်းမြို့၏ ပထမဆုံးမြို့ပိုင်အဖြစ် <b>ဦးထွန်းမောင်</b> စတင် တာဝန်ထမ်းဆောင်ခြင်း။</td>
       </tr>
+
       <tr data-year="1960" data-category="အုပ်ချုပ်ရေး">
         <td><b>၁၉၆၀ ပြည့်နှစ်</b></td>
         <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
-        <td>တပ်ကုန်းမြို့နယ်ကို တရားဝင်ဖွဲ့စည်းခဲ့ပြီး တပ်ကုန်းမြို့သည် မြို့နယ်ရုံးစိုက်ရာမြို့ ဖြစ်လာခြင်း။</td>
+        <td>တပ်ကုန်းမြို့နယ်ကို တရားဝင်ဖွဲ့စည်းခဲ့ပြီး တပ်ကုန်းမြို့သည် မြို့နယ်ရုံးစိုက်ရာမြို့အဖြစ် တိုးမြှင့်သတ်မှတ်ခြင်း ခံရခြင်း။</td>
       </tr>
-      <tr data-year="2014" data-category="အုပ်ချုပ်ရေး">
+
+      <tr data-year="2014" data-category="လူမှုရေး">
         <td><b>၂၀၁၄ ခုနှစ်</b></td>
-        <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
-        <td>ပြည်ထောင်စု သန်းခေါင်စာရင်းအရ တပ်ကုန်းမြို့ပေါ် လူဦးရေ စုစုပေါင်း ၄၁,၆၈၃ ဦး ရှိလာကြောင်း မှတ်တမ်းတင်ခြင်း။</td>
+        <td><span class="badge badge-social">လူမှုရေး</span></td>
+        <td>ပြည်ထောင်စု သန်းခေါင်စာရင်းအရ တပ်ကုန်းမြို့ပေါ် လူဦးရေ စုစုပေါင်း ၄၁,၆၈၃ ဦး ရှိလာကြောင်း တရားဝင်မှတ်တမ်းတင်ခြင်း။</td>
       </tr>
-      <tr data-year="2024" data-category="သဘာဝဘေး">
+
+      <tr data-year="2024" data-category="ဘေးအန္တရာယ်">
         <td><b>၂၀၂၄ ခုနှစ်</b></td>
-        <td><span class="badge badge-disaster">သဘာဝဘေး</span></td>
-        <td>ရာဂီမုန်တိုင်းကြောင့် တပ်ကုန်းမြို့နယ်အတွင်း ဆင်သေချောင်း ရေလျှံကာ ထူးခြားဆိုးရွားသည့် စက်တင်ဘာလ ရေဘေးမှတ်တမ်း ဖြစ်ပွားခြင်း။</td>
+        <td><span class="badge badge-disaster">ဘေးအန္တရာယ်</span></td>
+        <td>ရာဂီမုန်တိုင်းအရှိန်ကြောင့် တပ်ကုန်းမြို့နယ်အတွင်းရှိ ဆင်သေချောင်း ရေလျှံကာ ထူးခြားဆိုးရွားသည့် စက်တင်ဘာလ ရေဘေးမှတ်တမ်း ဖြစ်ပွားခြင်း။</td>
       </tr>
+
     </tbody>
   </table>
 </div>
@@ -99,7 +108,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     const tableBody = document.getElementById('timelineBody');
     const rows = Array.from(tableBody.rows);
 
-    // Active Button Style ပြောင်းခြင်း
+    // Active Button Style ပြောင်းလဲခြင်း
     document.getElementById('btnSortOld').classList.toggle('active', order === 'oldest');
     document.getElementById('btnSortNew').classList.toggle('active', order === 'newest');
 
@@ -109,7 +118,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       return order === 'oldest' ? yearA - yearB : yearB - yearA;
     });
 
-    // ဇယားကို ပြန်စီခြင်း
+    // ဇယားကို ဒေတာအသစ်အတိုင်း ပြန်စီခြင်း
     rows.forEach(row => tableBody.appendChild(row));
   }
 </script>
@@ -234,7 +243,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     background-color: #fcfcfc;
   }
 
-  /* 🏷 Category Badges (ကဏ္ဍအလိုက် အရောင်လေးများခွဲခြင်း) */
+  /* 🏷 Category Badges (ကဏ္ဍအလိုက် အရောင်ခွဲခြားမှု) */
   .badge {
     display: inline-block;
     padding: 0.2rem 0.5rem;
@@ -242,11 +251,15 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     font-weight: bold;
     border-radius: 4px;
     color: white;
+    white-space: nowrap;
   }
-  .badge-history { background-color: #6f42c1; }
-  .badge-transit { background-color: #0366d6; }
-  .badge-admin { background-color: #28a745; }
-  .badge-disaster { background-color: #d73a49; }
+  .badge-admin     { background-color: #28a745; } /* အစိမ်းရောင် - အုပ်ချုပ်ရေး */
+  .badge-economy   { background-color: #008080; } /* စိမ်းပြာရောင် - စီးပွားရေး */
+  .badge-social    { background-color: #b8860b; } /* ရွှေဝါ/အညိုရောင် - လူမှုရေး */
+  .badge-env       { background-color: #20c997; } /* အစိမ်းနုရောင် - သဘာဝပတ်ဝန်းကျင် */
+  .badge-healthedu { background-color: #17a2b8; } /* မိုးပြာရောင် - ပညာကျန်းမာ */
+  .badge-infra     { background-color: #0366d6; } /* အပြာရောင် - အခြေခံအဆောက်အအုံ */
+  .badge-disaster  { background-color: #d73a49; } /* အနီရောင် - ဘေးအန္တရာယ် */
 
   /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း */
   @media (max-width: 768px) {
