@@ -149,7 +149,7 @@
 
   @media (max-width: 420px) {
     .p-banner {
-      margin-top: 30px !important; 
+      margin-top: 15px !important; 
     }
     .main-content li {
       font-size: 0.76rem !important; 
