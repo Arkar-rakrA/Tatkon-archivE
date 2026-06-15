@@ -10,7 +10,7 @@
 * [သတင်းနှင့်လှုပ်ရှားမှုများ](./activity.html) - မော်ကွန်းတိုက်၏ လှုပ်ရှားဆောင်ရွက်မှုများနှင့် ရပ်ရွာ၏ကူညီပံ့ပို့မှုများ။
 
 <style>
-  /* 🖥 ဤအပိုင်းသည် Desktop ပေါ်တွင် အစ်ကို ညှိထားသော မူလအတိုင်း ရာနှုန်းပြည့် ဖြစ်သည် */
+  /* For Desktop */
   .page-header {
     padding: 4rem 5rem !important; 
   }
@@ -48,16 +48,15 @@
     margin-left: calc(-50vw + 50%); 
     margin-right: calc(-50vw + 50%); 
     
-    /* 🛠 🔥 အပေါ်က စာသားတွေနဲ့ လုံးဝ ကပ်မနေစေဘဲ အောက်ကို တွန်းချလိုက်သည့် စနစ် (Desktop အတွက်) */
     margin-top: 25px !important; 
     margin-bottom: -50px; 
     overflow: hidden; 
-    height: 180px; /* 🛠 Desktop ပေါ်မှာ ပုံပြူးကြီး မဖြစ်စေရန် အရပ်ကို ၂၀၀ မှ ၁၈၀ သို့ နည်းနည်း လျှော့ချခြင်း */
+    height: 180px; 
   }
   
   .p-banner img {
     width: 100%; 
-    height: 180px; /* 🛠 Banner အမြင့်နှင့် ကွက်တိ ဖြစ်အောင် လိုက်ညှိခြင်း */
+    height: 180px; 
     display: block; 
     object-fit: cover; 
     object-position: center; 
@@ -66,7 +65,7 @@
   
   .p-content {
     position: absolute; 
-    top: 60%; /* ပုံအရပ်နိမ့်သွား၍ စာသားကို အလယ်ဗဟို ပိုကျအောင် ၆၅% မှ ၆၀% သို့ ညှိခြင်း */
+    top: 60%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     width: 95%; 
@@ -99,7 +98,7 @@
     font-family: sans-serif;
   }
 
-  /* 📱 🛠 ဤအပိုင်းသည် မိုဘိုင်းဖုန်း (Screen အကျယ် 768px ထက်သေးသောစက်များ) အတွက်သာ အလုပ်လုပ်မည် */
+  /* For Mobile */
   @media (max-width: 768px) {
     .page-header {
       padding: 1.5rem 1rem !important;
@@ -130,13 +129,12 @@
       margin-bottom: 8px !important;
     }
 
-    /* 🛠 🔥 မိုဘိုင်းဖုန်းပေါ်တွင် စာသားနှင့် ပုံကြား ကွက်တိ Space ရစေရန် ပြင်ဆင်ချက် */
     .p-banner {
-      margin-top: 20px !important; /* ဖုန်းပေါ်တွင် အပေါ်ကစာကို ၄၀ ပစ်ဇယ် တွန်းထုတ်ခြင်း */
-      height: 130px; /* ဖုန်းပေါ်တွင် ပုံအမြင့်ကို ၁၄၀ မှ ၁၃၀ သို့ ထပ်မံ လျှော့ချခြင်း */
+      margin-top: 20px !important; 
+      height: 130px; 
     }
     .p-banner img {
-      height: 130px;
+      height: 110px;
     }
     .p-content {
       top: 50%;
@@ -149,7 +147,6 @@
     }
   }
 
-  /* 📱 🛠 ဖုန်းအသေးစားလေးများ (Screen 420px အောက်) အတွက် ထပ်မံ ချိန်ညှိခြင်း */
   @media (max-width: 420px) {
     .p-banner {
       margin-top: 30px !important; 
