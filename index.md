@@ -30,8 +30,7 @@
   .main-content {
     max-width: 55rem !important; 
     padding: 2rem 2rem 0rem !important;
-    /* 🛠 အောက်ခြေ Banner ပုံနှင့် ကပ်မနေစေရန် Desktop ပေါ်တွင် Space ချန်ထားခြင်း */
-    margin-bottom: 3.5rem !important; 
+    margin-bottom: 0rem !important; 
   }
 
   .main-content ul {
@@ -48,15 +47,17 @@
     width: auto; 
     margin-left: calc(-50vw + 50%); 
     margin-right: calc(-50vw + 50%); 
-    margin-top: -1px; 
+    
+    /* 🛠 🔥 အပေါ်က စာသားတွေနဲ့ လုံးဝ ကပ်မနေစေဘဲ အောက်ကို တွန်းချလိုက်သည့် စနစ် (Desktop အတွက်) */
+    margin-top: 50px !important; 
     margin-bottom: -50px; 
     overflow: hidden; 
-    height: 200px;
+    height: 180px; /* 🛠 Desktop ပေါ်မှာ ပုံပြူးကြီး မဖြစ်စေရန် အရပ်ကို ၂၀၀ မှ ၁၈၀ သို့ နည်းနည်း လျှော့ချခြင်း */
   }
   
   .p-banner img {
     width: 100%; 
-    height: 200px; 
+    height: 180px; /* 🛠 Banner အမြင့်နှင့် ကွက်တိ ဖြစ်အောင် လိုက်ညှိခြင်း */
     display: block; 
     object-fit: cover; 
     object-position: center; 
@@ -65,7 +66,7 @@
   
   .p-content {
     position: absolute; 
-    top: 65%; 
+    top: 60%; /* ပုံအရပ်နိမ့်သွား၍ စာသားကို အလယ်ဗဟို ပိုကျအောင် ၆၅% မှ ၆၀% သို့ ညှိခြင်း */
     left: 50%; 
     transform: translate(-50%, -50%); 
     width: 95%; 
@@ -100,7 +101,6 @@
 
   /* 📱 🛠 ဤအပိုင်းသည် မိုဘိုင်းဖုန်း (Screen အကျယ် 768px ထက်သေးသောစက်များ) အတွက်သာ အလုပ်လုပ်မည် */
   @media (max-width: 768px) {
-    /* ၁။ ခေါင်းစီးပိုင်း ချိန်ညှိခြင်း */
     .page-header {
       padding: 1.5rem 1rem !important;
     }
@@ -110,7 +110,6 @@
     .project-tagline {
       font-size: 0.8rem !important;
       line-height: 1.5 !important;
-      /* 🌟 "သည့် ဒီဂျစ်တယ်မော်ကွန်းတိုက်" အောက်ကြောင်းမကွဲစေရန် ကာကွယ်ခြင်း */
       word-break: keep-all !important; 
       overflow-wrap: break-word !important;
     }
@@ -118,14 +117,12 @@
       display: none !important; 
     }
 
-    /* ၂။ အလယ်က Main Content (မော်ကွန်းတိုက်အညွှန်း) ပိုင်း ပြင်ဆင်ချက် */
     .main-content h2 {
-      font-size: 1.15rem !important; /* 🛠 မိုဘိုင်းပေါ်တွင် ကြီးမနေစေရန် ၁.၂၅ မှ ၁.၁၅ သို့ ထပ်မံ လျှော့ချခြင်း */
+      font-size: 1.15rem !important; 
       margin-bottom: 12px !important;
     }
     .main-content {
       padding: 1.5rem 1.2rem 0rem !important; 
-      margin-bottom: 2.5rem !important; /* 🛠 မိုဘိုင်းပေါ်တွင်လည်း အောက်ခြေပုံနှင့် မကပ်စေရန် Space တိုးချန်ခြင်း */
     }
     .main-content li {
       font-size: 0.82rem !important; 
@@ -133,12 +130,13 @@
       margin-bottom: 8px !important;
     }
 
-    /* ၃။ အောက်ခြေ Banner ပိုင်း အချိုးကျ ချုံ့ခြင်း */
+    /* 🛠 🔥 မိုဘိုင်းဖုန်းပေါ်တွင် စာသားနှင့် ပုံကြား ကွက်တိ Space ရစေရန် ပြင်ဆင်ချက် */
     .p-banner {
-      height: 140px; 
+      margin-top: 40px !important; /* ဖုန်းပေါ်တွင် အပေါ်ကစာကို ၄၀ ပစ်ဇယ် တွန်းထုတ်ခြင်း */
+      height: 130px; /* ဖုန်းပေါ်တွင် ပုံအမြင့်ကို ၁၄၀ မှ ၁၃၀ သို့ ထပ်မံ လျှော့ချခြင်း */
     }
     .p-banner img {
-      height: 140px;
+      height: 130px;
     }
     .p-content {
       top: 50%;
@@ -153,8 +151,8 @@
 
   /* 📱 🛠 ဖုန်းအသေးစားလေးများ (Screen 420px အောက်) အတွက် ထပ်မံ ချိန်ညှိခြင်း */
   @media (max-width: 420px) {
-    .main-content {
-      margin-bottom: 2rem !important; /* ဖုန်းအသေးလေးတွေမှာလည်း အောက်ခြေ Space ကွက်တိဖြစ်စေရန် */
+    .p-banner {
+      margin-top: 30px !important; 
     }
     .main-content li {
       font-size: 0.76rem !important; 
