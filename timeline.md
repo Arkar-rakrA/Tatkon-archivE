@@ -117,7 +117,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
 
 ---
 
-<p class="back-home">[ပင်မစာမျက်နှာသို့ ပြန်သွားရန်](./index.html)</p>
+<p class="back-home"><a href="./index.html">ပင်မစာမျက်နှာသို့ ပြန်သွားရန်</a></p>
 
 <script>
   let originalRows = Array.from(document.getElementById('timelineBody').rows);
