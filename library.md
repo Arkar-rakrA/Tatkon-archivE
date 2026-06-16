@@ -60,10 +60,10 @@ description: သမိုင်းမှတ်တမ်းများ၊ အစ
     margin: 2rem 0 !important;
   }
 
-  /* 📂 Library List Styling */
+  /* 📂 Library List Styling (Tab တစ်ချက်စာ ရွှေ့ခြင်း) */
   .library-list {
     list-style: none !important;
-    padding-left: 0 !important;
+    padding-left: 1.5rem !important; /* ဘယ်ဘက်ကို Tab တစ်ချက်စာ Space အဖြစ် 1.5rem တွန်းပေးထားခြင်း */
     margin-bottom: 1.5rem !important;
   }
   .library-list li {
@@ -101,8 +101,10 @@ description: သမိုင်းမှတ်တမ်းများ၊ အစ
     .project-tagline { font-size: 0.8rem !important; }
     .main-content { padding: 1.5rem 1.2rem 2rem !important; }
     .main-content h1 { font-size: 1.5rem !important; }
-    .main-content h3 { font-size: 1.15rem !important; }
     
+    .main-content h3 { font-size: 1.05rem !important; } /* ခေါင်းစဉ် အရွယ်အစားကို မိုဘိုင်းပေါ်မှာ ပိုသေးအောင် ညှိလိုက်ခြင်း */
+    
+    .library-list { padding-left: 1.2rem !important; } /* မိုဘိုင်း screen ကျဉ်းကျဉ်းပေါ်မှာ သင့်တော်မယ့် Tab size စနစ်ပြောင်းခြင်း */
     .library-list li { font-size: 0.88rem !important; }
     .back-home { font-size: 0.88rem !important; }
   }
