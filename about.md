@@ -131,4 +131,16 @@ Tatkon-archivE အနေဖြင့်-------
     .main-content h1 { font-size: 1.35rem !important; }
     .main-content h2 { font-size: 1.15rem !important; }
   }
+
+  /* သင်တောင်းဆိုထားသော Center Alignment အပိုင်း */
+  .main-content h2, 
+  .main-content p {
+    text-align: center !important;
+  }
+
+  /* ဓာတ်ပုံမှတ်တမ်း ခေါင်းစဉ်နှင့် အခြား h2 များ အလယ်ရောက်ရန် */
+  .main-content h2 {
+    display: block;
+    text-align: center !important;
+  }
 </style>
