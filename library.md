@@ -1,7 +1,9 @@
 ---
+
 layout: default
 title: စာကြည့်တိုက်
-description: သမိုင်းမှတ်တမ်းများ၊ အစီရင်ခံစာများ၊ မြေပုံများနှင့် ဓာတ်ပုံများ
+description: သမိုင်းမှတ်တမ်းများ၊ အစီရင်ခံစာများ၊ မြေပုံများနှင့် ဓာတ်ပုံများ
+
 ---
 
 # စာကြည့်တိုက်
@@ -9,13 +11,99 @@ description: သမိုင်းမှတ်တမ်းများ၊ အစ
 <br>
 
 ### 📁 ဘာသာရပ်ခွဲများ
-* 📂 [သန်းခေါင်စာရင်းများ](./library/census/census_list.html)
-* 📂 [ဗြိတိသျှအုပ်ချုပ်ရေးအစီရင်ခံစာများ](./library/1983-british-reports/report-list.html)
 
----
+<ul class="library-list">
+  <li>📂 <a href="./library/census/census_list.html">သန်းခေါင်စာရင်းများ</a></li>
+  <li>📂 <a href="./library/1983-british-reports/report-list.html">ဗြိတိသျှအုပ်ချုပ်ရေးအစီရင်ခံစာများ</a></li>
+</ul>
 
-[ပင်မစာမျက်နှာသို့ ပြန်သွားရန်](./index.html)
+<br>
+<hr>
+
+<p class="back-home"><a href="./index.html">ပင်မစာမျက်နှာသို့ ပြန်သွားရန်</a></p>
 
 <style>
-  .site-footer { display: none !important; }
+  /* 🖥 Layout & Typography */
+  .page-header { padding: 2rem 5rem !important; }
+  .project-name { font-size: 2.5rem !important; margin-bottom: 1rem !important; }
+  .project-tagline { font-size: 1rem !important; margin-bottom: 1rem !important; }
+  footer.site-footer, .site-footer { display: none !important; }
+
+  .main-content {
+    max-width: 60rem !important; 
+    padding: 2.5rem 2rem 3rem !important;
+    font-family: sans-serif;
+    color: #2b2b2b;
+    line-height: 1.65 !important;
+  }
+
+  .main-content h1 {
+    font-size: 2.2rem !important;
+    font-weight: bold;
+    margin-top: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3rem;
+  }
+
+  .main-content h3 {
+    font-size: 1.3rem !important;
+    color: #155799;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .main-content hr {
+    height: 1px !important;
+    background-color: #eaecef !important;
+    border: none !important;
+    margin: 2rem 0 !important;
+  }
+
+  /* 📂 Library List Styling */
+  .library-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .library-list li {
+    font-size: 0.95rem !important;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f1f8ff;
+  }
+  .library-list li a {
+    color: #0366d6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .library-list li a:hover {
+    text-decoration: underline;
+    color: #d73a49;
+  }
+
+  /* 🔗 Back to Home Link Style */
+  .back-home {
+    font-size: 0.95rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+  .back-home a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  .back-home a:hover {
+    text-decoration: underline;
+  }
+
+  /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း */
+  @media (max-width: 768px) {
+    .page-header { padding: 1.5rem 1rem !important; }
+    .project-name { font-size: 1.4rem !important; }
+    .project-tagline { font-size: 0.8rem !important; }
+    .main-content { padding: 1.5rem 1.2rem 2rem !important; }
+    .main-content h1 { font-size: 1.5rem !important; }
+    .main-content h3 { font-size: 1.15rem !important; }
+    
+    .library-list li { font-size: 0.88rem !important; }
+    .back-home { font-size: 0.88rem !important; }
+  }
 </style>
