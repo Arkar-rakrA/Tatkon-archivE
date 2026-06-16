@@ -51,7 +51,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
 
       <tr data-year="1904" data-category="အခြေခံအဆောက်အအုံ">
         <td><b>၁၉၀၄ ခုနှစ်</b></td>
-        <td><span class="badge badge-infra">အခြေခံအဆောက်အအုံ</span></td>
+        <td><span class="badge badge-infra">အခြေခံ<br>အဆောက်အအုံ</span></td>
         <td>ကိုလိုနီခေတ်ဦး ရန်ကုန်-မန္တလေး ရထားလမ်းနှင့် ကားလမ်းများ ဖောက်လုပ်ခဲ့သဖြင့် တပ်ကုန်းဘူတာ စတင်ပေါ်ပေါက်လာပြီး လမ်းပန်းဆက်သွယ်ရေး အချက်အခြာ ဖြစ်လာခြင်း။</td>
       </tr>
 
@@ -291,11 +291,15 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     th:nth-child(1), td:nth-child(1) { width: 22% !important; font-size: 0.8rem; } /* ရက်စွဲ */
     th:nth-child(2), td:nth-child(2) { width: 18% !important; text-align: center; } /* ကဏ္ဍ (အကျဉ်းဆုံးထားမည်) */
     th:nth-child(3), td:nth-child(3) { width: 60% !important; } /* ဖြစ်ရပ်မှတ်တမ်း (နေရာအများဆုံးပေးမည်) */
-    
-    /* Badge စာသားလေးတွေကို ဖုန်းပေါ်မှာ နည်းနည်း ထပ်သေးပေးခြင်း */
+
+    /* ⚠️ Badge စတိုင်ကို မိုဘိုင်းဖုန်းအတွက် အခုလို ပြင်ပေးပါ */
     .badge {
       font-size: 0.7rem;
-      padding: 0.15rem 0.3rem;
+      padding: 0.2rem 0.3rem;
+      white-space: normal !important; /* 👈 စာသားကို အောက်ကြောင်းဆင်းခွင့်ပြုရန် normal ပြောင်းပါ */
+      display: inline-block;
+      text-align: center;
+      line-height: 1.2; /* စာကြောင်း ၂ ကြောင်းကြား အကွာအဝေးကို ကပ်ပေးခြင်း */
     }
   }
 </style>
