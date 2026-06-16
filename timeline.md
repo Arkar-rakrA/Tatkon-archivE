@@ -44,7 +44,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     <tbody id="timelineBody">
       
       <tr data-year="1146" data-category="အုပ်ချုပ်ရေး">
-        <td><b>၁၁၄၆ ခုနှစ်</b></td>
+        <td><b>၁၁၄6 ခုနှစ်</b></td>
         <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
         <td>ဘိုးတော်ဘုရားစစ်တမ်းအရ ယနေ့ခေတ် တပ်ကုန်းမြို့တည်ရှိရာ နယ်မြေသည် <b>"တလိုင်းသေရွာ"</b> နယ်နိမိတ်အတွင်း ပါဝင်ခဲ့ကြောင်း အစောဆုံးမှတ်တမ်း တွေ့ရှိရခြင်း။</td>
       </tr>
@@ -241,7 +241,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     background-color: #fcfcfc;
   }
 
-  /* 🏷 Category Badges (Desktop) */
+  /* 🏷 Category Badges (Desktop တွင် ပုံမှန်အတိုင်း ဘေးတိုက် တစ်ကြောင်းတည်းပြပါမည်) */
   .badge {
     display: inline-block;
     padding: 0.2rem 0.5rem;
@@ -285,19 +285,20 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     th, td { padding: 0.5rem 0.4rem; }
     
     th:nth-child(1), td:nth-child(1) { width: 22% !important; font-size: 0.8rem; }
-    th:nth-child(2), td:nth-child(2) { width: 22% !important; text-align: center; } /* 💡 မိုဘိုင်းအတွက် နေရာနည်းနည်းထပ်ပေးလိုက်သည် */
-    th:nth-child(3), td:nth-child(3) { width: 56% !important; }
+    th:nth-child(2), td:nth-child(2) { width: 14% !important; text-align: center; } /* 💡 နေရာအကျဉ်းဆုံး ညှိလိုက်သည် */
+    th:nth-child(3), td:nth-child(3) { width: 64% !important; }
 
-    /* ⚠️ မြန်မာစာလုံးတွဲများ မပျက်စေရန် စနစ်သစ် ပြောင်းလဲထားပါသည် */
+    /* ⚠️ 🆕 မိုဘိုင်းဖုန်းပေါ်တွင် မြန်မာစာလုံးများကို တစ်လုံးချင်းစီ ဒေါင်လိုက် စာစီစေမည့် စနစ်သစ် */
     .badge {
       font-size: 0.72rem;
-      padding: 0.2rem 0.3rem;
-      white-space: normal !important;        /* စာကြောင်းဆင်းခွင့်ပြုရန် */
-      word-break: keep-all !important;      /* 👈 မြန်မာစာလုံးများ အလယ်ကမကျိုးစေရန် (အဓိကပြင်ဆင်ချက်) */
-      overflow-wrap: break-word !important;  /* 👈 စာလုံးတွဲအလိုက် အောက်ကြောင်းဆင်းရန် */
+      padding: 0.3rem 0.2rem;
+      white-space: pre-line !important;      /* Line breaks ကို လက်ခံရန် */
+      writing-mode: vertical-rl !important;  /* 👈 စာသားများကို ဒေါင်လိုက်ပြောင်းပစ်ခြင်း */
+      text-combine-upright: none !important; /* စာလုံးတွေ တစ်ခုနဲ့တစ်ခု မထပ်စေရန် */
       display: inline-block;
       text-align: center;
-      line-height: 1.3;
+      letter-spacing: 2px;                   /* စာလုံးတစ်လုံးချင်းစီကြား အကွာအဝေး */
+      line-height: 1.1;
     }
   }
 </style>
