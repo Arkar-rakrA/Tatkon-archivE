@@ -44,7 +44,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     <tbody id="timelineBody">
       
       <tr data-year="1146" data-category="အုပ်ချုပ်ရေး">
-        <td><b>၁၁၄6 ခုနှစ်</b></td>
+        <td><b>၁၁၄၆ ခုနှစ်</b></td>
         <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
         <td>ဘိုးတော်ဘုရားစစ်တမ်းအရ ယနေ့ခေတ် တပ်ကုန်းမြို့တည်ရှိရာ နယ်မြေသည် <b>"တလိုင်းသေရွာ"</b> နယ်နိမိတ်အတွင်း ပါဝင်ခဲ့ကြောင်း အစောဆုံးမှတ်တမ်း တွေ့ရှိရခြင်း။</td>
       </tr>
@@ -285,20 +285,23 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     th, td { padding: 0.5rem 0.4rem; }
     
     th:nth-child(1), td:nth-child(1) { width: 22% !important; font-size: 0.8rem; }
-    th:nth-child(2), td:nth-child(2) { width: 14% !important; text-align: center; } /* 💡 နေရာအကျဉ်းဆုံး ညှိလိုက်သည် */
+    th:nth-child(2), td:nth-child(2) { width: 14% !important; text-align: center; } /* ကဏ္ဍကော်လံကို အကျဉ်းဆုံးထားသည် */
     th:nth-child(3), td:nth-child(3) { width: 64% !important; }
 
-    /* ⚠️ 🆕 မိုဘိုင်းဖုန်းပေါ်တွင် မြန်မာစာလုံးများကို တစ်လုံးချင်းစီ ဒေါင်လိုက် စာစီစေမည့် စနစ်သစ် */
+    /* ⚠️ 🆕 မိုဘိုင်းဖုန်းပေါ်တွင် စာလုံးများကို အလျားလိုက်အတိုင်း တစ်လုံးချင်းစီ အောက်ဆင်းစေမည့် Flex စနစ်သစ် */
     .badge {
       font-size: 0.72rem;
-      padding: 0.3rem 0.2rem;
-      white-space: pre-line !important;      /* Line breaks ကို လက်ခံရန် */
-      writing-mode: vertical-rl !important;  /* 👈 စာသားများကို ဒေါင်လိုက်ပြောင်းပစ်ခြင်း */
-      text-combine-upright: none !important; /* စာလုံးတွေ တစ်ခုနဲ့တစ်ခု မထပ်စေရန် */
-      display: inline-block;
-      text-align: center;
-      letter-spacing: 2px;                   /* စာလုံးတစ်လုံးချင်းစီကြား အကွာအဝေး */
-      line-height: 1.1;
+      padding: 0.25rem 0.3rem;
+      white-space: normal !important;
+      
+      /* စာလုံးများကို ပုံမှန်အတိုင်း အလျားလိုက်ထားပြီး အောက်သို့ တစ်လုံးချင်း စီဆင်းစေရန် */
+      display: inline-flex !important;
+      flex-direction: column !important; 
+      align-items: center;
+      justify-content: center;
+      
+      word-break: break-all !important; /* စကားလုံးကို ဖြတ်ချရန် */
+      line-height: 1.3;
     }
   }
 </style>
