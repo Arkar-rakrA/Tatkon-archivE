@@ -292,12 +292,11 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
   .badge-infra     { background-color: #0366d6; }
   .badge-disaster  { background-color: #d73a49; }
 
-  /* Desktop တွင် HTML ထဲက <br> ကို ပိတ်ထားခြင်း */
   .t-break {
     display: none;
   }
 
-  /* 🔗 🆕 In-text Citation Link Styling */
+  /* 🔗 In-text Citation Link Styling */
   .cite-link {
     color: #0366d6;
     font-weight: bold;
@@ -310,7 +309,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     color: #d73a49;
   }
 
-  /* 📚 🆕 References Section Styling */
+  /* 📚 References Section Styling */
   .references-section {
     background-color: #fafbfc;
     padding: 1.5rem;
@@ -327,9 +326,12 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
   }
   .references-list {
     margin-bottom: 0;
-    padding-left: 1.5rem;
+    padding-left: 2rem; /* မြန်မာစာလုံးဝိုင်းဝိုင်းလေးတွေ ဆန့်အောင် နေရာနည်းနည်းတိုးပေးခြင်း */
     font-size: 0.9rem;
     line-height: 1.6;
+    
+    /* 💡 🆕 အင်္ဂလိပ်နံပါတ် (1,2,3) မှ မြန်မာနံပါတ် (၁၊ ၂၊ ၃) သို့ ပြောင်းလဲခြင်း စနစ်အသစ် */
+    list-style-type: myanmar !important; 
   }
   .references-list li {
     margin-bottom: 0.5rem;
