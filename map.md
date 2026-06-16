@@ -13,24 +13,31 @@ description: တပ်ကုန်းမြို့နယ်၏ ခေတ်အ
     padding: 0 !important;
   }
 
-  /* 🖥 ကာလာဘား (Header) ကို ရှေ့က သန်းခေါင်စာရင်းစာမျက်နှာများနှင့် Format တစ်ထပ်တည်း ပြန်ညှိခြင်း */
-  header.page-header h1 { 
-    display: none !important; 
+  /* 🖥 ကာလာဘား (Header) ထဲက ခေါင်းစဉ်ကြီးကို Desktop ရော Mobile မှာပါ ပေါ်အောင် ပြန်ဖွင့်ခြင်း */
+  header.page-header h1,
+  .page-header h1 { 
+    display: block !important; 
+    font-size: 1.8rem !important; /* စာလုံးအရွယ်အစားကို အနေတော် ပြန်ညှိထားပါသည် */
+    font-weight: bold !important;
+    color: #ffffff !important;
+    margin-bottom: 0.5rem !important;
+    text-align: center !important;
   }
   
+  /* အောက်က စာတန်းအသေးလေးကိုပါ စနစ်တကျ တွဲပြခြင်း */
   .page-header .project-tagline {
     display: block !important;
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     font-weight: normal !important;
-    opacity: 0.95 !important;
-    line-height: 1.6 !important;
+    opacity: 0.9 !important;
+    line-height: 1.5 !important;
     margin: 0 auto !important;
     max-width: 900px !important;
     text-align: center !important;
   }
   
   .page-header {
-    padding: 1.8rem 1rem !important;
+    padding: 1.5rem 1rem !important; /* Header အမြင့်ကို ပိုကျစ်လစ်အောင် ညှိခြင်း */
   }
 
   /* အောက်ခြေ Footer ကို ဖျောက်ခြင်း */
@@ -53,7 +60,7 @@ description: တပ်ကုန်းမြို့နယ်၏ ခေတ်အ
   /* 🛠 မြေပုံ Frame ကို အပေါ်က ကာလာဘားအောက်ကနေ ကွက်တိ အပြည့်နေရာချခြင်း */
   .map-frame-container {
     width: 100% !important;
-    height: calc(100vh - 120px) !important; /* 👈 Header အောက်ကနေ မျက်နှာပြင်အပြည့် ယူထားပါသည် */
+    height: calc(100vh - 140px) !important; /* 👈 Header အောက်ကနေ မျက်နှာပြင်အပြည့် ကွက်တိယူခြင်း */
     position: relative;
     overflow: hidden;
     padding: 0px !important;
@@ -69,17 +76,21 @@ description: တပ်ကုန်းမြို့နယ်၏ ခေတ်အ
 
   /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း */
   @media (max-width: 768px) {
-    /* မိုဘိုင်းပေါ်တွင် Theme ကြောင့် စာသားများ အောက်သို့ လာရှုပ်နေခြင်းကို တားဆီးရန် */
-    .page-header { 
-      padding: 1.2rem 1rem !important; 
+    /* မိုဘိုင်းပေါ်တွင် ခေါင်းစဉ်အရွယ်အစားများ ထပ်မနေဘဲ ကျစ်လစ်သွားစေရန် */
+    header.page-header h1,
+    .page-header h1 { 
+      font-size: 1.25rem !important; 
     }
     .project-tagline { 
-      font-size: 0.9rem !important; 
+      font-size: 0.85rem !important; 
+    }
+    .page-header { 
+      padding: 1rem 0.8rem !important; 
     }
     
     /* မိုဘိုင်းအမြင့်နှင့် ကိုက်ညီအောင် မြေပုံ Container ကို ပြန်ညှိခြင်း */
     .map-frame-container { 
-      height: calc(100vh - 90px) !important; 
+      height: calc(100vh - 110px) !important; 
     }
   }
 </style>
