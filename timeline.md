@@ -51,14 +51,14 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
 
       <tr data-year="1904" data-category="အခြေခံအဆောက်အအုံ">
         <td><b>၁၉၀၄ ခုနှစ်</b></td>
-        <td><span class="badge badge-infra">အခြေခံ<br>အဆောက်အအုံ</span></td>
+        <td><span class="badge badge-infra">အခြေခံအဆောက်အအုံ</span></td>
         <td>ကိုလိုနီခေတ်ဦး ရန်ကုန်-မန္တလေး ရထားလမ်းနှင့် ကားလမ်းများ ဖောက်လုပ်ခဲ့သဖြင့် တပ်ကုန်းဘူတာ စတင်ပေါ်ပေါက်လာပြီး လမ်းပန်းဆက်သွယ်ရေး အချက်အခြာ ဖြစ်လာခြင်း။</td>
       </tr>
 
       <tr data-year="1951" data-category="အုပ်ချုပ်ရေး">
         <td><b>၁၉၅၁ ခုနှစ်</b></td>
         <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
-        <td>လွတ်လပ်ရေးရပြီးနောက် တပ်ကုန်းမြို့၏ ပထမဆုံးမြို့ပိုင်အဖြစ် <b>ဦးထွန်းမောင်</b> စတင် တာဝန်ထမ်းဆောင်ခြင်း။</td>
+        <td>လွတ်လပ်ရေးရပြီးနောက် တပ်ကုန်းမြို့၏ ပထမဆုံးမြို့ပိုင်အဖြစ် <b>ဦးထွန်းမောင်</b> စတင် တတာဝန်ထမ်းဆောင်ခြင်း။</td>
       </tr>
 
       <tr data-year="1960" data-category="အုပ်ချုပ်ရေး">
@@ -108,7 +108,6 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     const tableBody = document.getElementById('timelineBody');
     const rows = Array.from(tableBody.rows);
 
-    // Active Button Style ပြောင်းလဲခြင်း
     document.getElementById('btnSortOld').classList.toggle('active', order === 'oldest');
     document.getElementById('btnSortNew').classList.toggle('active', order === 'newest');
 
@@ -118,13 +117,12 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       return order === 'oldest' ? yearA - yearB : yearB - yearA;
     });
 
-    // ဇယားကို ဒေတာအသစ်အတိုင်း ပြန်စီခြင်း
     rows.forEach(row => tableBody.appendChild(row));
   }
 </script>
 
 <style>
-  /* 🖥 Layout & Typography ကို ရှေးစာမျက်နှာများနှင့် တစ်ပြေးညီ ညှိခြင်း */
+  /* 🖥 Layout & Typography ကို စာမျက်နှာများနှင့် တစ်ပြေးညီ ညှိခြင်း */
   .page-header { padding: 2rem 5rem !important; }
   .project-name { font-size: 2.5rem !important; margin-bottom: 1rem !important; }
   .project-tagline { font-size: 1rem !important; margin-bottom: 1rem !important; }
@@ -154,7 +152,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     margin: 2rem 0 !important;
   }
 
-  /* 🎛 Controls (Filter & Sort UI) အလှဆင်ခြင်း */
+  /* 🎛 Controls (Filter & Sort UI) */
   .timeline-controls {
     display: flex;
     flex-wrap: wrap;
@@ -208,10 +206,10 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     font-weight: bold;
   }
 
-  /* 📊 Table Styling (ဇယားပုံစံအလှဆင်ခြင်း) */
+  /* 📊 Table Styling */
   .table-container {
     width: 100%;
-    overflow-x: auto; /* မိုဘိုင်းဖုန်းပေါ်တွင် ဘေးတိုက် Scroll ဆွဲနိုင်ရန် */
+    overflow-x: auto;
     margin-bottom: 2rem;
     border: 1px solid #dfe2e5;
     border-radius: 6px;
@@ -243,7 +241,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     background-color: #fcfcfc;
   }
 
-  /* 🏷 Category Badges (ကဏ္ဍအလိုက် အရောင်ခွဲခြားမှု) */
+  /* 🏷 Category Badges (Desktop တွင် တစ်ကြောင်းတည်းပြရန် white-space: nowrap သုံးထားပါသည်) */
   .badge {
     display: inline-block;
     padding: 0.2rem 0.5rem;
@@ -251,7 +249,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     font-weight: bold;
     border-radius: 4px;
     color: white;
-    white-space: nowrap;
+    white-space: nowrap; 
   }
   .badge-admin     { background-color: #28a745; } /* အစိမ်းရောင် - အုပ်ချုပ်ရေး */
   .badge-economy   { background-color: #008080; } /* စိမ်းပြာရောင် - စီးပွားရေး */
@@ -261,7 +259,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
   .badge-infra     { background-color: #0366d6; } /* အပြာရောင် - အခြေခံအဆောက်အအုံ */
   .badge-disaster  { background-color: #d73a49; } /* အနီရောင် - ဘေးအန္တရာယ် */
 
-/* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း */
+  /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း */
   @media (max-width: 768px) {
     .page-header { padding: 1.5rem 1rem !important; }
     .project-name { font-size: 1.4rem !important; }
@@ -283,23 +281,23 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       text-align: left;
     }
     
-    /* ⚠️ မိုဘိုင်းဖုန်းအတွက် ကော်လံအကျယ်များကို ပြန်ညှိသည့်အပိုင်း (အသစ်) */
+    /* မိုဘိုင်းဖုန်းအတွက် ကော်လံအကျယ်များကို ပြန်ညှိခြင်း */
     table { font-size: 0.82rem; }
     th, td { padding: 0.5rem 0.4rem; }
     
-    /* ကော်လံ တစ်ခုချင်းစီကို ဖုန်း screen ပေါ်မူတည်ပြီး ရာခိုင်နှုန်း ပြန်သတ်မှတ်ခြင်း */
     th:nth-child(1), td:nth-child(1) { width: 22% !important; font-size: 0.8rem; } /* ရက်စွဲ */
-    th:nth-child(2), td:nth-child(2) { width: 18% !important; text-align: center; } /* ကဏ္ဍ (အကျဉ်းဆုံးထားမည်) */
-    th:nth-child(3), td:nth-child(3) { width: 60% !important; } /* ဖြစ်ရပ်မှတ်တမ်း (နေရာအများဆုံးပေးမည်) */
+    th:nth-child(2), td:nth-child(2) { width: 18% !important; text-align: center; } /* ကဏ္ဍ */
+    th:nth-child(3), td:nth-child(3) { width: 60% !important; }                     /* ဖြစ်ရပ်မှတ်တမ်း */
 
-    /* ⚠️ Badge စတိုင်ကို မိုဘိုင်းဖုန်းအတွက် အခုလို ပြင်ပေးပါ */
+    /* ⚠️ မိုဘိုင်းဖုန်းပေါ်တွင် စာလုံးအလိုအလျောက်ခေါက်ဆင်းစေမည့် Badge Style */
     .badge {
       font-size: 0.7rem;
       padding: 0.2rem 0.3rem;
-      white-space: normal !important; /* 👈 စာသားကို အောက်ကြောင်းဆင်းခွင့်ပြုရန် normal ပြောင်းပါ */
+      white-space: normal !important;      /* စာသားကို အောက်ကြောင်းဆင်းခွင့်ပြုရန် */
+      word-break: break-all !important;    /* နေရာမဆန့်ပါက စာလုံးအလယ်ကနေ အလိုအလျောက် ဖြတ်ချရန် */
       display: inline-block;
       text-align: center;
-      line-height: 1.2; /* စာကြောင်း ၂ ကြောင်းကြား အကွာအဝေးကို ကပ်ပေးခြင်း */
+      line-height: 1.25;
     }
   }
 </style>
