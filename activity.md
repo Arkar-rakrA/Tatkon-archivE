@@ -20,18 +20,25 @@ description: မော်ကွန်းတိုက်၏ လှုပ်ရှ
         <p class="date">၂၀၂၆၊ ဇွန် ၁၅</p>
       </div>
     </div>
+    <div class="news-card">
+      <div class="thumbnail">🖼️</div>
+      <div class="content">
+        <h3><a href="#">ရပ်ရွာပံ့ပိုးမှုဖြင့် စာကြည့်တိုက်အသစ်ဖွင့်လှစ်</a></h3>
+        <p class="date">၂၀၂၆၊ မေ ၂၀</p>
+      </div>
     </div>
+  </div>
 
   <hr>
-  <p class="back-home"><a href="./index.html">← ပင်မစာမျက်နှာသို့ ပြန်သွားရန်</a></p>
+  <p class="back-home"><a href="./index.html">ပင်မစာမျက်နှာသို့ ပြန်သွားရန်</a></p>
 </div>
 
 <style>
-  /* 🖥 Layout & Typography */
-  .main-content { max-width: 60rem; margin: 0 auto; padding: 2.5rem 2rem; font-family: sans-serif; }
+  /* 🖥 Layout & Typography (လေ့လာမှုစာမျက်နှာနှင့် တူညီအောင်ပြုလုပ်ထားသည်) */
+  .main-content { max-width: 60rem !important; margin: 0 auto; padding: 2.5rem 2rem 3rem !important; font-family: sans-serif; color: #2b2b2b; }
   
-  .main-content h1 { font-size: 2.2rem; text-align: center; margin-bottom: 0.5rem; }
-  .subtitle { text-align: center; font-size: 1.1rem; color: #555; margin-bottom: 2rem; }
+  .main-content h1 { font-size: 2.2rem !important; font-weight: bold; text-align: center; margin-bottom: 0.5rem !important; border-bottom: none !important; }
+  .subtitle { text-align: center; font-size: 1.1rem !important; color: #555; margin-bottom: 2rem !important; }
 
   /* Dynamic Marquee */
   .news-ticker { background: #fff3cd; padding: 10px; border-left: 5px solid #ffc107; margin-bottom: 2rem; overflow: hidden; white-space: nowrap; font-size: 1rem; }
@@ -43,20 +50,25 @@ description: မော်ကွန်းတိုက်၏ လှုပ်ရှ
   .news-card { display: flex; align-items: center; background: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #ddd; }
   .thumbnail { width: 80px; height: 80px; background: #ccc; flex-shrink: 0; display: flex; align-items: center; justify-content: center; margin-right: 15px; border-radius: 4px; }
   
-  .content h3 { margin: 0 0 5px 0; font-size: 1.1rem; line-height: 1.4; }
+  .content h3 { margin: 0 0 5px 0 !important; font-size: 1.1rem !important; line-height: 1.4; }
   .content h3 a { text-decoration: none; color: #155799; }
-  .date { font-size: 0.85rem; color: #777; margin: 0; }
+  .content h3 a:hover { text-decoration: underline; }
+  .date { font-size: 0.85rem !important; color: #777; margin: 0; }
 
-  .back-home { margin-top: 2rem; font-size: 0.95rem; }
+  hr { height: 1px !important; background-color: #eaecef !important; border: none !important; margin: 2rem 0 !important; }
+  .back-home { font-size: 0.95rem !important; margin-bottom: 1.2rem !important; }
+  .back-home a { color: #0366d6; text-decoration: none; }
+  .back-home a:hover { text-decoration: underline; }
 
-  /* 📱 Mobile Adjustment */
+  /* 📱 Mobile Adjustment (လေ့လာမှုစာမျက်နှာ၏ Breakpoint နှင့် ကိုက်ညီအောင်) */
   @media (max-width: 768px) {
-    .main-content { padding: 1.5rem 1rem; }
-    .main-content h1 { font-size: 1.6rem; }
-    .subtitle { font-size: 0.95rem; }
+    .main-content { padding: 1.5rem 1.2rem 2rem !important; }
+    .main-content h1 { font-size: 1.5rem !important; }
+    .subtitle { font-size: 0.95rem !important; }
     .news-grid { grid-template-columns: 1fr; }
     .news-ticker { font-size: 0.9rem; }
-    .content h3 { font-size: 1rem; }
-    .date { font-size: 0.75rem; }
+    .content h3 { font-size: 1rem !important; }
+    .date { font-size: 0.75rem !important; }
+    .back-home { font-size: 0.8rem !important; }
   }
 </style>
