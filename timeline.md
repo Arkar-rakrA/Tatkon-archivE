@@ -45,7 +45,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       
       <tr data-year="-300" data-category="သဘာဝပတ်ဝန်းကျင်">
         <td><b>ဘီစီ ၃ ရာစုခန့်</b></td>
-        <td><span class="badge badge-env">သဘာဝပတ်ဝန်းကျင်</span></td>
+        <td><span class="badge badge-env">သဘာဝ<span class="t-break"><br></span>ပတ်ဝန်းကျင်</span></td>
         <td>တပ်ကုန်းမြို့နယ်တဝိုက် ကုန်းတွင်းပိုင်း ရေဝေရေလဲဒေသများနှင့် ချောင်းရိုးမြောင်းရိုးများ ပထမဆုံး စတင်ဖြစ်ပေါ်လာခြင်း။</td>
       </tr>
 
@@ -130,7 +130,6 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     document.getElementById('btnSortNew').classList.toggle('active', order === 'newest');
 
     rows.sort((a, b) => {
-      // 💡 Base-10 (ဒသမစနစ်) ကို သတ်မှတ်ပြီး အနှုတ်ကိန်းများကိုပါ မှန်ကန်စွာ စီခိုင်းခြင်း
       const yearA = parseInt(a.getAttribute('data-year'), 10);
       const yearB = parseInt(b.getAttribute('data-year'), 10);
       return order === 'oldest' ? yearA - yearB : yearB - yearA;
@@ -260,7 +259,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     background-color: #fcfcfc;
   }
 
-  /* 🏷 Category Badges (Desktop တွင် ဘေးတိုက် တစ်ကြောင်းတည်း အပြည့်ပြပါမည်) */
+  /* 🏷 Category Badges */
   .badge {
     display: inline-block;
     padding: 0.2rem 0.5rem;
@@ -279,7 +278,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
   .badge-infra     { background-color: #0366d6; }
   .badge-disaster  { background-color: #d73a49; }
 
-  /* Desktop တွင် HTML ထဲက <br> ကို အလုပ်မလုပ်စေရန် ပိတ်ထားခြင်း */
+  /* Desktop တွင် HTML ထဲက <br> ကို ပိတ်ထားခြင်း */
   .t-break {
     display: none;
   }
@@ -313,7 +312,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     th:nth-child(2), td:nth-child(2) { width: 20% !important; text-align: center; } 
     th:nth-child(3), td:nth-child(3) { width: 58% !important; }
 
-    /* မိုဘိုင်းပေါ်တွင် သဘာဝကျသော မြန်မာစာလုံးပုံစံ (မကွဲထွက်စေရန်) */
+    /* မိုဘိုင်းပေါ်တွင် သဘာဝကျသော မြန်မာစာလုံးပုံစံ */
     .badge {
       font-size: 0.72rem;
       padding: 0.2rem 0.3rem;
@@ -322,8 +321,8 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       text-align: center;
     }
 
-    /* 💡 မိုဘိုင်းဖုန်းပေါ်တွင် "အခြေခံအဆောက်အအုံ" တစ်ခုတည်းကိုသာ ၂ ကြောင်း ခေါက်ခိုင်းခြင်း */
-    .badge-infra {
+    /* 💡 🆕 မိုဘိုင်းဖုန်းပေါ်တွင် အရှည်ဆုံးဖြစ်သည့် ကဏ္ဍကြီး ၂ ခုလုံးကို စာကြောင်းဆင်းခွင့်ပြုခြင်း */
+    .badge-infra, .badge-env {
       white-space: normal !important; 
     }
     .t-break {
