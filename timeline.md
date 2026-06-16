@@ -117,7 +117,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
 
 ---
 
-[ပင်မစာမျက်နှာသို့ ပြန်သွားရန်](./index.html)
+<p class="back-home">[ပင်မစာမျက်နှာသို့ ပြန်သွားရန်](./index.html)</p>
 
 <script>
   let originalRows = Array.from(document.getElementById('timelineBody').rows);
@@ -182,6 +182,12 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     background-color: #eaecef !important;
     border: none !important;
     margin: 2rem 0 !important;
+  }
+
+  /* 🔗 Back to Home Link Style ညှိခြင်း */
+  .back-home {
+    font-size: 0.95rem !important;
+    margin-bottom: 1.2rem !important;
   }
 
   /* 🎛 Controls (Filter & Sort UI) */
@@ -326,17 +332,14 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
   }
   .references-list {
     margin-bottom: 0;
-    padding-left: 2rem; /* မြန်မာစာလုံးဝိုင်းဝိုင်းလေးတွေ ဆန့်အောင် နေရာနည်းနည်းတိုးပေးခြင်း */
+    padding-left: 2rem;
     font-size: 0.9rem;
     line-height: 1.6;
-    
-    /* 💡 🆕 အင်္ဂလိပ်နံပါတ် (1,2,3) မှ မြန်မာနံပါတ် (၁၊ ၂၊ ၃) သို့ ပြောင်းလဲခြင်း စနစ်အသစ် */
     list-style-type: myanmar !important; 
   }
   .references-list li {
     margin-bottom: 0.5rem;
   }
-  /* Target highlight effect when clicked */
   .references-list li:target {
     background-color: #fffbdd;
     padding: 2px 5px;
@@ -351,6 +354,8 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     .main-content { padding: 1.5rem 1.2rem 2rem !important; }
     .main-content h1 { font-size: 1.5rem !important; }
     
+    .back-home { font-size: 0.88rem !important; } /* မိုဘိုင်း Link Size ညှိခြင်း */
+
     .timeline-controls {
       flex-direction: column;
       gap: 0.8rem;
