@@ -43,8 +43,26 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     </thead>
     <tbody id="timelineBody">
       
+      <tr data-year="-300" data-category="သဘာဝပတ်ဝန်းကျင်">
+        <td><b>ဘီစီ ၃ ရာစုခန့်</b></td>
+        <td><span class="badge badge-env">သဘာဝပတ်ဝန်းကျင်</span></td>
+        <td>တပ်ကုန်းမြို့နယ်တဝိုက် ကုန်းတွင်းပိုင်း ရေဝေရေလဲဒေသများနှင့် ချောင်းရိုးမြောင်းရိုးများ ပထမဆုံး စတင်ဖြစ်ပေါ်လာခြင်း။</td>
+      </tr>
+
+      <tr data-year="400" data-category="လူမှုရေး">
+        <td><b>ပျူခေတ် (အေဒီ ၅ ရာစု)</b></td>
+        <td><span class="badge badge-social">လူမှုရေး</span></td>
+        <td>ညောင်ကိုင်းကျေးရွာအနီးနှင့် ပတ်ဝန်းကျင်ဒေသများတွင် ရှေးမြို့ဟောင်းရာများနှင့် ပျူခေတ်အသုံးအဆောင်ပစ္စည်းများ စတင်တွေ့ရှိရခြင်း။</td>
+      </tr>
+
+      <tr data-year="1057" data-category="အုပ်ချုပ်ရေး">
+        <td><b>ပုဂံခေတ် (အနော်ရထာမင်း)</b></td>
+        <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
+        <td>အနော်ရထာမင်းစော တည်ထောင်ခဲ့သော ကင်းမြို့ (၄၃) မြို့အနက် ယနေ့ခေတ် တပ်ကုန်းမြို့နယ်အတွင်းရှိ <b>"ရွှေမြို့"</b> သည် တစ်ခုအပါအဝင် ဖြစ်ခဲ့ခြင်း။</td>
+      </tr>
+
       <tr data-year="1146" data-category="အုပ်ချုပ်ရေး">
-        <td><b>၁၁၄၆ ခုနှစ်</b></td>
+        <td><b>၁၁၄၆ ခုနှစ် (မြန်မာသက္ကရာဇ်)</b></td>
         <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
         <td>ဘိုးတော်ဘုရားစစ်တမ်းအရ ယနေ့ခေတ် တပ်ကုန်းမြို့တည်ရှိရာ နယ်မြေသည် <b>"တလိုင်းသေရွာ"</b> နယ်နိမိတ်အတွင်း ပါဝင်ခဲ့ကြောင်း အစောဆုံးမှတ်တမ်း တွေ့ရှိရခြင်း။</td>
       </tr>
@@ -112,8 +130,9 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     document.getElementById('btnSortNew').classList.toggle('active', order === 'newest');
 
     rows.sort((a, b) => {
-      const yearA = parseInt(a.getAttribute('data-year'));
-      const yearB = parseInt(b.getAttribute('data-year'));
+      // 💡 Base-10 (ဒသမစနစ်) ကို သတ်မှတ်ပြီး အနှုတ်ကိန်းများကိုပါ မှန်ကန်စွာ စီခိုင်းခြင်း
+      const yearA = parseInt(a.getAttribute('data-year'), 10);
+      const yearB = parseInt(b.getAttribute('data-year'), 10);
       return order === 'oldest' ? yearA - yearB : yearB - yearA;
     });
 
@@ -241,7 +260,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     background-color: #fcfcfc;
   }
 
-  /* 🏷 Category Badges (Desktop တွင် ပုံမှန်အတိုင်း အပြည့်ပြပါမည်) */
+  /* 🏷 Category Badges (Desktop တွင် ဘေးတိုက် တစ်ကြောင်းတည်း အပြည့်ပြပါမည်) */
   .badge {
     display: inline-block;
     padding: 0.2rem 0.5rem;
@@ -291,24 +310,24 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     th, td { padding: 0.5rem 0.4rem; }
     
     th:nth-child(1), td:nth-child(1) { width: 22% !important; font-size: 0.8rem; }
-    th:nth-child(2), td:nth-child(2) { width: 20% !important; text-align: center; } /* ကဏ္ဍကော်လံ */
+    th:nth-child(2), td:nth-child(2) { width: 20% !important; text-align: center; } 
     th:nth-child(3), td:nth-child(3) { width: 58% !important; }
 
-    /* မိုဘိုင်းဖုန်းအတွက် Badge စနစ်အား သဘာဝအတိုင်း ပြန်ပြောင်းခြင်း */
+    /* မိုဘိုင်းပေါ်တွင် သဘာဝကျသော မြန်မာစာလုံးပုံစံ (မကွဲထွက်စေရန်) */
     .badge {
       font-size: 0.72rem;
       padding: 0.2rem 0.3rem;
-      white-space: nowrap !important; /* 👈 ကျန်တဲ့စာလုံးတွေ လုံးဝအောက်မဆင်းစေရန် */
+      white-space: nowrap !important; 
       display: inline-block;
       text-align: center;
     }
 
-    /* 💡 မိုဘိုင်းဖုန်းပေါ်တွင် "အခြေခံအဆောက်အအုံ" ထဲက <br> ကို အသက်သွင်းခြင်း */
+    /* 💡 မိုဘိုင်းဖုန်းပေါ်တွင် "အခြေခံအဆောက်အအုံ" တစ်ခုတည်းကိုသာ ၂ ကြောင်း ခေါက်ခိုင်းခြင်း */
     .badge-infra {
-      white-space: normal !important; /* အခြေခံအဆောက်အအုံတစ်ခုတည်းကိုပဲ စာကြောင်းဆင်းခွင့်ပေးမည် */
+      white-space: normal !important; 
     }
     .t-break {
-      display: inline !important; /* <br> ကို မိုဘိုင်းပေါ်မှာ ပေါ်စေခြင်း */
+      display: inline !important; 
     }
   }
 </style>
