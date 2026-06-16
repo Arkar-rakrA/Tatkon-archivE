@@ -284,8 +284,8 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     table { font-size: 0.82rem; }
     th, td { padding: 0.5rem 0.4rem; }
     
-    th:nth-child(1), td:nth-child(1) { width: 20% !important; font-size: 0.8rem; }
-    th:nth-child(2), td:nth-child(2) { width: 16% !important; text-align: center; } /* ကဏ္ဍကော်လံကို အကျဉ်းဆုံးထားသည် */
+    th:nth-child(1), td:nth-child(1) { width: 18% !important; font-size: 0.8rem; }
+    th:nth-child(2), td:nth-child(2) { width: 18% !important; text-align: center; } /* ကဏ္ဍကော်လံကို အကျဉ်းဆုံးထားသည် */
     th:nth-child(3), td:nth-child(3) { width: 64% !important; }
 
     /* ⚠️ 🆕 မိုဘိုင်းဖုန်းပေါ်တွင် စာလုံးများကို အလျားလိုက်အတိုင်း တစ်လုံးချင်းစီ အောက်ဆင်းစေမည့် Flex စနစ်သစ် */
