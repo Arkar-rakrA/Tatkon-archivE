@@ -58,7 +58,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       <tr data-year="1951" data-category="အုပ်ချုပ်ရေး">
         <td><b>၁၉၅၁ ခုနှစ်</b></td>
         <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
-        <td>လွတ်လပ်ရေးရပြီးနောက် တပ်ကုန်းမြို့၏ ပထမဆုံးမြို့ပိုင်အဖြစ် <b>ဦးထွန်းမောင်</b> စတင် တတာဝန်ထမ်းဆောင်ခြင်း။</td>
+        <td>လွတ်လပ်ရေးရပြီးနောက် တပ်ကုန်းမြို့၏ ပထမဆုံးမြို့ပိုင်အဖြစ် <b>ဦးထွန်းမောင်</b> စတင် တာဝန်ထမ်းဆောင်ခြင်း။</td>
       </tr>
 
       <tr data-year="1960" data-category="အုပ်ချုပ်ရေး">
@@ -122,7 +122,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
 </script>
 
 <style>
-  /* 🖥 Layout & Typography ကို စာမျက်နှာများနှင့် တစ်ပြေးညီ ညှိခြင်း */
+  /* 🖥 Layout & Typography */
   .page-header { padding: 2rem 5rem !important; }
   .project-name { font-size: 2.5rem !important; margin-bottom: 1rem !important; }
   .project-tagline { font-size: 1rem !important; margin-bottom: 1rem !important; }
@@ -241,7 +241,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     background-color: #fcfcfc;
   }
 
-  /* 🏷 Category Badges (Desktop တွင် တစ်ကြောင်းတည်းပြရန် white-space: nowrap သုံးထားပါသည်) */
+  /* 🏷 Category Badges (Desktop) */
   .badge {
     display: inline-block;
     padding: 0.2rem 0.5rem;
@@ -251,13 +251,13 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     color: white;
     white-space: nowrap; 
   }
-  .badge-admin     { background-color: #28a745; } /* အစိမ်းရောင် - အုပ်ချုပ်ရေး */
-  .badge-economy   { background-color: #008080; } /* စိမ်းပြာရောင် - စီးပွားရေး */
-  .badge-social    { background-color: #b8860b; } /* ရွှေဝါ/အညိုရောင် - လူမှုရေး */
-  .badge-env       { background-color: #20c997; } /* အစိမ်းနုရောင် - သဘာဝပတ်ဝန်းကျင် */
-  .badge-healthedu { background-color: #17a2b8; } /* မိုးပြာရောင် - ပညာကျန်းမာ */
-  .badge-infra     { background-color: #0366d6; } /* အပြာရောင် - အခြေခံအဆောက်အအုံ */
-  .badge-disaster  { background-color: #d73a49; } /* အနီရောင် - ဘေးအန္တရာယ် */
+  .badge-admin     { background-color: #28a745; }
+  .badge-economy   { background-color: #008080; }
+  .badge-social    { background-color: #b8860b; }
+  .badge-env       { background-color: #20c997; }
+  .badge-healthedu { background-color: #17a2b8; }
+  .badge-infra     { background-color: #0366d6; }
+  .badge-disaster  { background-color: #d73a49; }
 
   /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း */
   @media (max-width: 768px) {
@@ -281,23 +281,23 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       text-align: left;
     }
     
-    /* မိုဘိုင်းဖုန်းအတွက် ကော်လံအကျယ်များကို ပြန်ညှိခြင်း */
     table { font-size: 0.82rem; }
     th, td { padding: 0.5rem 0.4rem; }
     
-    th:nth-child(1), td:nth-child(1) { width: 22% !important; font-size: 0.8rem; } /* ရက်စွဲ */
-    th:nth-child(2), td:nth-child(2) { width: 18% !important; text-align: center; } /* ကဏ္ဍ */
-    th:nth-child(3), td:nth-child(3) { width: 60% !important; }                     /* ဖြစ်ရပ်မှတ်တမ်း */
+    th:nth-child(1), td:nth-child(1) { width: 22% !important; font-size: 0.8rem; }
+    th:nth-child(2), td:nth-child(2) { width: 22% !important; text-align: center; } /* 💡 မိုဘိုင်းအတွက် နေရာနည်းနည်းထပ်ပေးလိုက်သည် */
+    th:nth-child(3), td:nth-child(3) { width: 56% !important; }
 
-    /* ⚠️ မိုဘိုင်းဖုန်းပေါ်တွင် စာလုံးအလိုအလျောက်ခေါက်ဆင်းစေမည့် Badge Style */
+    /* ⚠️ မြန်မာစာလုံးတွဲများ မပျက်စေရန် စနစ်သစ် ပြောင်းလဲထားပါသည် */
     .badge {
-      font-size: 0.7rem;
+      font-size: 0.72rem;
       padding: 0.2rem 0.3rem;
-      white-space: normal !important;      /* စာသားကို အောက်ကြောင်းဆင်းခွင့်ပြုရန် */
-      word-break: break-all !important;    /* နေရာမဆန့်ပါက စာလုံးအလယ်ကနေ အလိုအလျောက် ဖြတ်ချရန် */
+      white-space: normal !important;        /* စာကြောင်းဆင်းခွင့်ပြုရန် */
+      word-break: keep-all !important;      /* 👈 မြန်မာစာလုံးများ အလယ်ကမကျိုးစေရန် (အဓိကပြင်ဆင်ချက်) */
+      overflow-wrap: break-word !important;  /* 👈 စာလုံးတွဲအလိုက် အောက်ကြောင်းဆင်းရန် */
       display: inline-block;
       text-align: center;
-      line-height: 1.25;
+      line-height: 1.3;
     }
   }
 </style>
