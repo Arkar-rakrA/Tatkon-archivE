@@ -1,16 +1,15 @@
 ---
 layout: default
 title: ၂၀၁၄ ခုနှစ် သန်းခေါင်စာရင်း တပ်ကုန်းမြို့နယ် အစီရင်ခံစာ
-description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမိုင်းနှင့်ယဉ်ကျေးမှု၊ မှတ်တမ်းမှတ်ရာနှင့်အချက်အလက်များကို စုစည်းထိန်းသိမ်းထားသည့် <br> ဒီဂျစ်တယ်မော်ကွန်းတိုက်
+description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမိုင်းနှင့်ယဉ်ကျေးမှု၊ မှတ်တမ်းမှတ်ရာနှင့်အချက်အလက်များကို စုစည်းထိန်းသိမ်းထားသည့် ဒီဂျစ်တယ်မော်ကွန်းတိုက်
 ---
 
 <style>
-  /* 🛠 ကာလာဘား (Header) ထဲက ဝဘ်ဆိုက်အမည်ကြီးကိုပဲ သီးသန့်ရွေးပြီး ဖျောက်ခြင်း */
+  /* 🖥 Layout & Typography (Desktop Standard) */
   header.page-header h1 { 
     display: none !important; 
   }
   
-  /* စာတန်းအသေးလေးကို မဖျောက်ဘဲ စာလုံးအရွယ်အစားနှင့် စတိုင် ညှိပြီး ပြန်ပြခြင်း */
   .page-header .project-tagline {
     display: block !important;
     font-size: 1.1rem !important;
@@ -22,17 +21,14 @@ description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမ
     text-align: center !important;
   }
   
-  /* ကာလာဘား အလှအပအတွက် အမြင့်ကို နည်းနည်း ညှိပေးခြင်း */
   .page-header {
     padding: 1.8rem 1rem !important;
   }
 
-  /* အောက်ခြေကို ဖျောက်ခြင်း */
-  .site-footer { 
+  footer.site-footer { 
     display: none !important; 
   }
   
-  /* စာမျက်နှာကို စာအုပ်ဖတ်ရ အဆင်ပြေအောင် ဘေးဘောင် အကျယ်ညှိခြင်း */
   .main-content {
     max-width: 850px !important;
     margin: 0 auto !important;
@@ -40,7 +36,6 @@ description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမ
     line-height: 1.7 !important;
   }
 
-  /* 🛠 စာမျက်နှာထဲက စာအုပ်ခေါင်းစဉ်အစစ်ကို လုံးဝ ပျောက်မသွားအောင် တားဆီးပေးသည့် ကုဒ် */
   .main-content .my-custom-title {
     display: block !important;
     font-size: 1.5rem !important;
@@ -51,7 +46,7 @@ description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမ
     line-height: 1.3 !important;
   }
 
-  /* စာအုပ်ဖုံးနှင့် အချက်အလက်များကို ဘေးချင်းယှဉ်ပြမည့် Box ပုံစံ */
+  /* 📚 Book Container Settings */
   .book-container {
     display: flex;
     gap: 30px;
@@ -79,7 +74,7 @@ description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမ
     color: #333 !important;
   }
 
-  /* Download ခလုတ် ပုံစံ */
+  /* 📥 Download Button Styles */
   .download-btn {
     display: inline-block;
     background-color: #007bff;
@@ -89,18 +84,80 @@ description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမ
     border-radius: 5px;
     font-weight: bold;
     margin-top: 15px;
+    text-align: center;
   }
   .download-btn:hover {
     background-color: #0056b3;
   }
 
-  /* Blockquote ပုံစံညှိခြင်း */
+  /* Note Box & Headers */
   .note-box {
     background-color: #fff3cd;
     border-left: 4px solid #ffc107;
     padding: 15px;
     margin: 20px 0;
     border-radius: 0 4px 4px 0;
+  }
+
+  .main-content h2 {
+    font-size: 1.4rem !important;
+    color: #155799;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* 🔗 Back Link Style */
+  .custom-return-link {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 2rem !important;
+    font-size: 0.95rem !important;
+  }
+  .custom-return-link a {
+    color: #0366d6 !important;
+    text-decoration: none !important;
+  }
+  .custom-return-link a:hover {
+    text-decoration: underline !important;
+  }
+
+  /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း (Mobile View အမှန်) */
+  @media (max-width: 768px) {
+    .page-header { padding: 1.5rem 1rem !important; }
+    .project-tagline { font-size: 0.85rem !important; }
+    .main-content { padding: 1.5rem 1.2rem 2rem !important; }
+    
+    /* မိုဘိုင်းမှာ ခေါင်းစဉ်များ အရွယ်အစား လျှော့ချခြင်း */
+    .main-content .my-custom-title { font-size: 1.15rem !important; margin-top: 15px !important; margin-bottom: 15px !important; }
+    .main-content h2 { font-size: 1.1rem !important; }
+
+    /* ဘေးချင်းယှဉ်ရာမှ စာအုပ်ဖုံး အပေါ်၊ စာအောက် ပုံစံသို့ ပြောင်းလဲခြင်း */
+    .book-container {
+      flex-direction: column !important;
+      gap: 15px !important;
+      padding: 15px !important;
+    }
+    .book-cover {
+      flex: none !important;
+      text-align: center !important;
+      margin: 0 auto !important;
+    }
+    .book-info p {
+      font-size: 14.5px !important;
+    }
+
+    /* ဒေါင်းလုဒ်ခလုတ်ကို မိုဘိုင်း Screen အပြည့် ချဲ့ပြသခြင်း */
+    .download-btn {
+      display: block !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      padding: 12px 10px !important;
+      margin-top: 15px !important;
+    }
+    
+    .custom-return-link { font-size: 0.88rem !important; }
   }
 </style>
 
@@ -128,8 +185,8 @@ description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမ
 <p>ဤအစီရင်ခံစာပါ အချက်အလက်များထဲမှ တပ်ကုန်းမြို့နယ်နှင့် သက်ဆိုင်သော အရေးကြီးအချက်များကို အနှစ်ချုပ် ကောက်နုတ်ထားခြင်း ဖြစ်သည်။</p>
 
 <ul>
-  <li><strong>လူဦးရေ စုစုပေါင်း:</strong> ၂၁၇,၀၉၃ ဦး (ကျား - ၁၁၃,၇၂၂ ဦး၊ မ - ၁၁၃,၃၇၁ ဦး) ဖြစ်သည်။</li>
-  <li><strong>မြို့ပြနှင့်ကျေးလက်:</strong> မြို့ပေါ်တွင် ၄၁,၆၈၃ ဦး (၁၉.၂%) နေထိုင်ပြီး၊ ကျေးလက်တွင် ၁၇၅,၄၁၀ ဦး (၈၀.၈%) နေထိုင်သဖြင့် ကျေးလက်နေလူဦးရေ ပိုမိုများပြားသည်။</li>
+  <li><strong>လူဦးရေ စုစုပေါင်း:</strong> ၂၁၇,၀၉၃ ဦး (ကျား - ၁၁၃,၇၂၂ ဦး၊ မ - ၁၁၃,၃７၁ ဦး) ဖြစ်သည်။</li>
+  <li><strong>မြို့ပြနှင့်ကျေးလက်:</strong> မြို့ပေါ်တွင် ၄၁,၆၈၃ ဦး (၁၉.၂%) နေထိုင်ပြီး၊ ကျေးလက်တွင် ၁၇း၄၁၀ ဦး (၈၀.၈%) နေထိုင်သဖြင့် ကျေးလက်နေလူဦးရေ ပိုမိုများပြားသည်။</li>
   <li><strong>အိမ်ထောင်စုအရေအတွက်:</strong> စုစုပေါင်း ၅၀,၄၇၁ အိမ်ထောင်စု ရှိပြီး အိမ်ထောင်စုတစ်ခု၏ ပျမ်းမျှလူဦးရေမှာ ၄.၂ ဦး ဖြစ်သည်။</li>
   <li><strong>စာတတ်မြောက်မှုနှုန်း:</strong> တပ်ကုန်းမြို့နယ်၏ အသက် ၁၅ နှစ်အထက် စာတတ်မြောက်မှုနှုန်းမှာ ၉၄.၂% ရှိသည်။</li>
 </ul>
@@ -141,4 +198,6 @@ description: တပ်ကုန်းမြို့နယ်၏ ဒေသသမ
 <hr>
 <br>
 
-<a href="./census_list.html">⬅️ သန်းခေါင်စာရင်းများ စာရင်းသို့ ပြန်သွားရန်</a>
+<div class="custom-return-link">
+  <a href="./census_list.html">သန်းခေါင်စာရင်းများ စာရင်းသို့ ပြန်သွားရန်</a>
+</div>
