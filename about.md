@@ -44,23 +44,13 @@ Tatkon-archivE အနေဖြင့်-------
 [ပင်မစာမျက်နှာသို့ ပြန်သွားရန်](./index.html)
 
 <style>
-  /* 🖥 Layout & Typography ကို ရှေးစာမျက်နှာများနှင့် တစ်ပြေးညီ ညှိခြင်း */
-  .page-header {
-    padding: 2rem 5rem !important;
-  }
-  .project-name {
-    font-size: 2.5rem !important; 
-    margin-bottom: 1rem !important;
-  }
-  .project-tagline {
-    font-size: 1rem !important;
-    margin-bottom: 1rem !important;
-  }
-  
-  footer.site-footer, .site-footer {
-    display: none !important;
-  }
+  /* Page Header */
+  .page-header { padding: 2rem 5rem !important; }
+  .project-name { font-size: 2.5rem !important; margin-bottom: 1rem !important; }
+  .project-tagline { font-size: 1rem !important; margin-bottom: 1rem !important; }
+  footer.site-footer, .site-footer { display: none !important; }
 
+  /* Main Content */
   .main-content {
     max-width: 60rem !important; 
     padding: 2.5rem 2rem 3rem !important;
@@ -78,61 +68,40 @@ Tatkon-archivE အနေဖြင့်-------
     padding-bottom: 0.3rem;
   }
 
+  /* ခေါင်းစဉ်အားလုံးကို အလယ်ပို့ခြင်း */
   .main-content h2 {
     font-size: 1.5rem !important;
     font-weight: bold;
     margin-top: 2rem !important;
     margin-bottom: 1rem !important;
     color: #155799;
+    text-align: center !important; 
   }
 
-  .main-content h3 {
-    font-size: 1.15rem !important;
-    font-weight: bold;
-    margin-top: 1.5rem !important;
-    margin-bottom: 0.5rem !important;
-  }
-
-  .main-content p {
-    font-size: 0.95rem !important;
-    margin-bottom: 1.2rem !important;
-    text-align: justify;
-  }
-
-  /* အထူးပြင်ဆင်ချက် - မျှော်မှန်းချက်အပိုင်းကိုသာ Center ထားခြင်း */
-  .main-content h2:first-of-type,
+  /* မျှော်မှန်းချက်အောက်က စာပိုဒ်ကိုသာ Center ထားခြင်း */
   .main-content p:first-of-type {
     text-align: center !important;
   }
 
-  .main-content strong, .main-content b {
-    color: #000;
-    font-weight: bold;
+  /* ကျန်စာပိုဒ်များအတွက် ပုံမှန်အတိုင်း (justify) */
+  .main-content p {
+    font-size: 0.95rem !important;
+    margin-bottom: 1.2rem !important;
+    text-align: justify !important;
   }
 
-  .main-content hr {
-    height: 1px !important;
-    background-color: #eaecef !important;
-    border: none !important;
-    margin: 2rem 0 !important;
-  }
+  .main-content h3 { font-size: 1.15rem !important; font-weight: bold; margin-top: 1.5rem !important; margin-bottom: 0.5rem !important; }
+  .main-content strong, .main-content b { color: #000; font-weight: bold; }
+  .main-content hr { height: 1px !important; background-color: #eaecef !important; border: none !important; margin: 2rem 0 !important; }
 
-  /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် အချိုးကျစေရန် ညှိခြင်း */
+  /* Mobile Responsive */
   @media (max-width: 768px) {
     .page-header { padding: 1.5rem 1rem !important; }
     .project-name { font-size: 1.4rem !important; }
     .project-tagline { font-size: 0.8rem !important; }
     .main-content { padding: 1.5rem 1.2rem 2rem !important; }
-    
     .main-content h1 { font-size: 1.5rem !important; }
     .main-content h2 { font-size: 1.25rem !important; }
-    .main-content h3 { font-size: 1.05rem !important; }
     .main-content p { font-size: 0.88rem !important; line-height: 1.6 !important; }
-  }
-
-  @media (max-width: 420px) {
-    .main-content p { font-size: 0.85rem !important; }
-    .main-content h1 { font-size: 1.35rem !important; }
-    .main-content h2 { font-size: 1.15rem !important; }
   }
 </style>
