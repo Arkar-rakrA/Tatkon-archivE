@@ -46,19 +46,19 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       <tr data-year="-300" data-category="သဘာဝပတ်ဝန်းကျင်">
         <td><b>ဘီစီ ၃ ရာစုခန့်</b></td>
         <td><span class="badge badge-env">သဘာဝ<span class="t-break"><br></span>ပတ်ဝန်းကျင်</span></td>
-        <td>တပ်ကုန်းမြို့နယ်တဝိုက် ကုန်းတွင်းပိုင်း ရေဝေရေလဲဒေသများနှင့် ချောင်းရိုးမြောင်းရိုးများ ပထမဆုံး စတင်ဖြစ်ပေါ်လာခြင်း။</td>
+        <td>တပ်ကုန်းမြို့နယ်တဝိုက် ကုန်းတွင်းပိုင်း ရေဝေရေလဲဒေသများနှင့် ချောင်းရိုးမြောင်းရိုးများ ပထမဆုံး စတင်ဖြစ်ပေါ်လာခြင်း။<sup><a href="#ref-1" class="cite-link">[၁]</a></sup></td>
       </tr>
 
       <tr data-year="400" data-category="လူမှုရေး">
         <td><b>ပျူခေတ် (အေဒီ ၅ ရာစု)</b></td>
         <td><span class="badge badge-social">လူမှုရေး</span></td>
-        <td>ညောင်ကိုင်းကျေးရွာအနီးနှင့် ပတ်ဝန်းကျင်ဒေသများတွင် ရှေးမြို့ဟောင်းရာများနှင့် ပျူခေတ်အသုံးအဆောင်ပစ္စည်းများ စတင်တွေ့ရှိရခြင်း။</td>
+        <td>ညောင်ကိုင်းကျေးရွာအနီးနှင့် ပတ်ဝန်းကျင်ဒေသများတွင် ရှေးမြို့ဟောင်းရာများနှင့် ပျူခေတ်အသုံးအဆောင်ပစ္စည်းများ စတင်တွေ့ရှိရခြင်း။<sup><a href="#ref-2" class="cite-link">[၂]</a></sup></td>
       </tr>
 
       <tr data-year="1057" data-category="အုပ်ချုပ်ရေး">
         <td><b>ပုဂံခေတ် (အနော်ရထာမင်း)</b></td>
         <td><span class="badge badge-admin">အုပ်ချုပ်ရေး</span></td>
-        <td>အနော်ရထာမင်းစော တည်ထောင်ခဲ့သော ကင်းမြို့ (၄၃) မြို့အနက် ယနေ့ခေတ် တပ်ကုန်းမြို့နယ်အတွင်းရှိ <b>"ရွှေမြို့"</b> သည် တစ်ခုအပါအဝင် ဖြစ်ခဲ့ခြင်း။</td>
+        <td>အနော်ရထာမင်းစော တည်ထောင်ခဲ့သော ကင်းမြို့ (၄၃) မြို့အနက် ယနေ့ခေတ် တပ်ကုန်းမြို့နယ်အတွင်းရှိ <b>"ရွှေမြို့"</b> သည် တစ်ခုအပါအဝင် ဖြစ်ခဲ့ခြင်း။<sup><a href="#ref-3" class="cite-link">[၃]</a></sup></td>
       </tr>
 
       <tr data-year="1146" data-category="အုပ်ချုပ်ရေး">
@@ -100,6 +100,20 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     </tbody>
   </table>
 </div>
+
+<br>
+<hr>
+
+<div class="references-section">
+  <h3>📚 ကိုးကားစာရင်း</h3>
+  <ol class="references-list">
+    <li id="ref-1">ဒေါက်တာသန်းထွန်း၊ <i>ခေတ်ဟောင်းမြန်မာရာဇဝင်</i>၊ ၂၀၀၂ ခုနှစ်။</li>
+    <li id="ref-2">ညောင်ကိုင်းကျေးရွာ သမိုင်းသုတေသနအစီရင်ခံစာ (မြန်မာ့သမိုင်းအဖွဲ့)။</li>
+    <li id="ref-3">မှန်နန်းမဟာရာဇဝင်တော်ကြီး (ပထမတွဲ)။</li>
+  </ol>
+</div>
+
+<br>
 
 ---
 
@@ -283,6 +297,50 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     display: none;
   }
 
+  /* 🔗 🆕 In-text Citation Link Styling */
+  .cite-link {
+    color: #0366d6;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 2px;
+    font-size: 0.8rem;
+  }
+  .cite-link:hover {
+    text-decoration: underline;
+    color: #d73a49;
+  }
+
+  /* 📚 🆕 References Section Styling */
+  .references-section {
+    background-color: #fafbfc;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #e1e4e8;
+    margin-top: 2rem;
+  }
+  .references-section h3 {
+    margin-top: 0 !important;
+    font-size: 1.2rem !important;
+    color: #155799;
+    border-bottom: 1px solid #e1e4e8;
+    padding-bottom: 0.5rem;
+  }
+  .references-list {
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .references-list li {
+    margin-bottom: 0.5rem;
+  }
+  /* Target highlight effect when clicked */
+  .references-list li:target {
+    background-color: #fffbdd;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+
   /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း */
   @media (max-width: 768px) {
     .page-header { padding: 1.5rem 1rem !important; }
@@ -312,7 +370,6 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     th:nth-child(2), td:nth-child(2) { width: 20% !important; text-align: center; } 
     th:nth-child(3), td:nth-child(3) { width: 58% !important; }
 
-    /* မိုဘိုင်းပေါ်တွင် သဘာဝကျသော မြန်မာစာလုံးပုံစံ */
     .badge {
       font-size: 0.72rem;
       padding: 0.2rem 0.3rem;
@@ -321,7 +378,6 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
       text-align: center;
     }
 
-    /* 💡 🆕 မိုဘိုင်းဖုန်းပေါ်တွင် အရှည်ဆုံးဖြစ်သည့် ကဏ္ဍကြီး ၂ ခုလုံးကို စာကြောင်းဆင်းခွင့်ပြုခြင်း */
     .badge-infra, .badge-env {
       white-space: normal !important; 
     }
