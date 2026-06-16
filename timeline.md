@@ -51,7 +51,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
 
       <tr data-year="1904" data-category="အခြေခံအဆောက်အအုံ">
         <td><b>၁၉၀၄ ခုနှစ်</b></td>
-        <td><span class="badge badge-infra">အခြေခံအဆောက်အအုံ</span></td>
+        <td><span class="badge badge-infra">အခြေခံ<span class="t-break"><br></span>အဆောက်အအုံ</span></td>
         <td>ကိုလိုနီခေတ်ဦး ရန်ကုန်-မန္တလေး ရထားလမ်းနှင့် ကားလမ်းများ ဖောက်လုပ်ခဲ့သဖြင့် တပ်ကုန်းဘူတာ စတင်ပေါ်ပေါက်လာပြီး လမ်းပန်းဆက်သွယ်ရေး အချက်အခြာ ဖြစ်လာခြင်း။</td>
       </tr>
 
@@ -241,7 +241,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     background-color: #fcfcfc;
   }
 
-  /* 🏷 Category Badges (Desktop တွင် ပုံမှန်အတိုင်း ဘေးတိုက် တစ်ကြောင်းတည်းပြပါမည်) */
+  /* 🏷 Category Badges (Desktop တွင် ပုံမှန်အတိုင်း အပြည့်ပြပါမည်) */
   .badge {
     display: inline-block;
     padding: 0.2rem 0.5rem;
@@ -250,6 +250,7 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     border-radius: 4px;
     color: white;
     white-space: nowrap; 
+    line-height: 1.4;
   }
   .badge-admin     { background-color: #28a745; }
   .badge-economy   { background-color: #008080; }
@@ -258,6 +259,11 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
   .badge-healthedu { background-color: #17a2b8; }
   .badge-infra     { background-color: #0366d6; }
   .badge-disaster  { background-color: #d73a49; }
+
+  /* Desktop တွင် HTML ထဲက <br> ကို အလုပ်မလုပ်စေရန် ပိတ်ထားခြင်း */
+  .t-break {
+    display: none;
+  }
 
   /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် Responsive ဖြစ်စေရန် ညှိခြင်း */
   @media (max-width: 768px) {
@@ -284,24 +290,25 @@ description: တပ်ကုန်းမြို့နယ် ရက်စဉ်
     table { font-size: 0.82rem; }
     th, td { padding: 0.5rem 0.4rem; }
     
-    th:nth-child(1), td:nth-child(1) { width: 18% !important; font-size: 0.8rem; }
-    th:nth-child(2), td:nth-child(2) { width: 18% !important; text-align: center; } /* ကဏ္ဍကော်လံကို အကျဉ်းဆုံးထားသည် */
-    th:nth-child(3), td:nth-child(3) { width: 64% !important; }
+    th:nth-child(1), td:nth-child(1) { width: 22% !important; font-size: 0.8rem; }
+    th:nth-child(2), td:nth-child(2) { width: 20% !important; text-align: center; } /* ကဏ္ဍကော်လံ */
+    th:nth-child(3), td:nth-child(3) { width: 58% !important; }
 
-    /* ⚠️ 🆕 မိုဘိုင်းဖုန်းပေါ်တွင် စာလုံးများကို အလျားလိုက်အတိုင်း တစ်လုံးချင်းစီ အောက်ဆင်းစေမည့် Flex စနစ်သစ် */
+    /* မိုဘိုင်းဖုန်းအတွက် Badge စနစ်အား သဘာဝအတိုင်း ပြန်ပြောင်းခြင်း */
     .badge {
       font-size: 0.72rem;
-      padding: 0.25rem 0.3rem;
-      white-space: normal !important;
-      
-      /* စာလုံးများကို ပုံမှန်အတိုင်း အလျားလိုက်ထားပြီး အောက်သို့ တစ်လုံးချင်း စီဆင်းစေရန် */
-      display: inline-flex !important;
-      flex-direction: column !important; 
-      align-items: center;
-      justify-content: center;
-      
-      word-break: break-all !important; /* စကားလုံးကို ဖြတ်ချရန် */
-      line-height: 1.3;
+      padding: 0.2rem 0.3rem;
+      white-space: nowrap !important; /* 👈 ကျန်တဲ့စာလုံးတွေ လုံးဝအောက်မဆင်းစေရန် */
+      display: inline-block;
+      text-align: center;
+    }
+
+    /* 💡 မိုဘိုင်းဖုန်းပေါ်တွင် "အခြေခံအဆောက်အအုံ" ထဲက <br> ကို အသက်သွင်းခြင်း */
+    .badge-infra {
+      white-space: normal !important; /* အခြေခံအဆောက်အအုံတစ်ခုတည်းကိုပဲ စာကြောင်းဆင်းခွင့်ပေးမည် */
+    }
+    .t-break {
+      display: inline !important; /* <br> ကို မိုဘိုင်းပေါ်မှာ ပေါ်စေခြင်း */
     }
   }
 </style>
