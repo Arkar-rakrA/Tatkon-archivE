@@ -31,28 +31,38 @@ description: ဒီပရောဂျက်လေး ဘယ်လိုဖြစ
 </div>
 
 <style>
-  /* 🖥 Layout & Typography (ယခင်စာမျက်နှာများနှင့် တူညီသော စတိုင်လ်) */
-  .main-content { max-width: 60rem !important; margin: 0 auto; padding: 2.5rem 2rem 3rem !important; font-family: sans-serif; color: #2b2b2b; line-height: 1.65 !important; }
+  /* Page Header စာသားများကို အရွယ်အစားညှိခြင်း */
+  .page-header { 
+    padding: 2rem 5rem !important; 
+  }
   
+  /* ခေါင်းစဉ်ကြီး (Tatkon-archive) */
+  .project-name { 
+    font-size: 2.2rem !important; /* h1 နဲ့ တစ်ထပ်တည်းဖြစ်အောင် 2.2rem ထားပေးလိုက်ပါတယ် */
+    margin-bottom: 0.5rem !important; 
+    line-height: 1.2 !important;
+  }
+  
+  /* ခေါင်းစဉ်သေး (Tagline) */
+  .project-tagline { 
+    font-size: 1.1rem !important; /* subtitle နဲ့ တစ်ထပ်တည်းဖြစ်အောင် 1.1rem ထားပေးလိုက်ပါတယ် */
+    margin-bottom: 0 !important; 
+    opacity: 0.9;
+  }
+
+  /* ကျန်ရှိသော CSS များ (ယခင်အတိုင်း) */
+  .main-content { max-width: 60rem !important; margin: 0 auto; padding: 2.5rem 2rem 3rem !important; font-family: sans-serif; color: #2b2b2b; line-height: 1.65 !important; }
   .main-content h1 { font-size: 2.2rem !important; font-weight: bold; margin-top: 1rem !important; margin-bottom: 0.5rem !important; text-align: center; border-bottom: 1px solid #eaecef; padding-bottom: 0.3rem; }
   .subtitle { text-align: center; font-size: 1.1rem !important; color: #555; margin-bottom: 2.5rem !important; }
 
-  .about-section h3 { font-size: 1.3rem !important; color: #155799; margin-top: 1.5rem !important; margin-bottom: 0.8rem !important; }
-  .about-section p, .about-section ul { font-size: 1rem !important; margin-bottom: 1rem !important; }
-  .about-section ul { padding-left: 1.5rem !important; }
-
-  hr { height: 1px !important; background-color: #eaecef !important; border: none !important; margin: 2rem 0 !important; }
-  .back-home { font-size: 0.95rem !important; margin-bottom: 1.2rem !important; }
-  .back-home a { color: #0366d6; text-decoration: none; }
-  .back-home a:hover { text-decoration: underline; }
-
-  /* 📱 Mobile Responsive */
+  /* Mobile Responsive အတွက် Header ချိန်ညှိချက် */
   @media (max-width: 768px) {
+    .page-header { padding: 1.5rem 1rem !important; }
+    .project-name { font-size: 1.5rem !important; } /* h1 mobile size နဲ့ တူအောင် */
+    .project-tagline { font-size: 0.9rem !important; } /* subtitle mobile size နဲ့ တူအောင် */
+    
     .main-content { padding: 1.5rem 1.2rem 2rem !important; }
     .main-content h1 { font-size: 1.5rem !important; }
     .subtitle { font-size: 0.9rem !important; }
-    .about-section h3 { font-size: 1.1rem !important; }
-    .about-section p, .about-section ul { font-size: 0.9rem !important; }
-    .back-home { font-size: 0.8rem !important; }
   }
 </style>
