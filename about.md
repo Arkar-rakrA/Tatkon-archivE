@@ -1,69 +1,134 @@
 ---
+
 layout: default
 title: Tatkon-archivE အကြောင်း
-description: ဒီအစီအစဉ်လေး ဘယ်လိုဖြစ်လာလဲ။ ဘယ်ကိုရည်ရွယ်လဲ။ ဘာတွေ ဘယ်လို ဆက်လုပ်သွားမလဲ။
+description: ဒီအစီအစဉ်လေး ဘယ်လိုဖြစ်လာလဲ။ ဘယ်ကို ရည်ရွယ်လဲ။ ဘာတွေ ဘယ်လို ဆက်လုပ်သွားမလဲ။
+
 ---
+
+# Tatkon-archivE အကြောင်း
 
 <br>
 
-<div class="main-content">
-  <h1>Tatkon-archivE အကြောင်း</h1>
-  <p class="subtitle">ဒီအစီအစဉ်လေး ဘယ်လိုဖြစ်လာလဲ။ ဘယ်ကိုရည်ရွယ်လဲ။ ဘာတွေ ဘယ်လို ဆက်လုပ်သွားမလဲ။</p>
+## မျှော်မှန်းချက်
 
-  <div class="about-section">
-    <h3>မျှော်မှန်းချက်</h3>
-    <p>တပ်ကုန်းမြို့နယ်၏ သမိုင်းကြောင်း၊ ယဉ်ကျေးမှုအမွေအနှစ်များနှင့် ဒေသန္တရအချက်အလက်များကို နောင်လာနောက်သားများ လက်ဆင့်ကမ်းနိုင်ရန်အတွက် ဒစ်ဂျစ်တယ်စနစ်ဖြင့် စုဆောင်းထိန်းသိမ်းထားရှိသော အကောင်းဆုံး မော်ကွန်းတိုက်ဖြစ်လာစေရန်။</p>
+တပ်ကုန်းမြို့နယ်ရဲ့ ဘလာ--ဘလာ--ဘလာ---
 
-    <h3>ရည်ရွယ်ချက်</h3>
-    <p>ဒေသခံများ၏ မှတ်ဉာဏ်များ၊ အဖြစ်အပျက်များနှင့် အချက်အလက်များကို စနစ်တကျ ပြန်လည်စုစည်းခြင်း၊ သုတေသနပြုခြင်းနှင့် အများပြည်သူ လေ့လာနိုင်စေရန် ဖော်ထုတ်တင်ပြခြင်း။</p>
+---
 
-    <h3>ဦးတည်ချက်</h3>
-    <ul style="list-style-position: inside; padding-left: 0;">
-      <li>သမိုင်းဝင်မှတ်တမ်းများနှင့် ဓာတ်ပုံများကို ဒစ်ဂျစ်တယ်မှတ်တမ်းတင်ခြင်း။</li>
-      <li>တပ်ကုန်းမြို့နယ်နှင့် ပတ်သက်သည့် သုတေသနပြုချက်များကို စုစည်းဖော်ပြခြင်း။</li>
-      <li>ရပ်ရွာလူထု၏ ပူးပေါင်းပါဝင်မှုဖြင့် ဒေသဆိုင်ရာ အချက်အလက်များအား ဖြည့်စွက်ခြင်း။</li>
-    </ul>
-  </div>
+## ရည်ရွယ်ချက်
 
-  <hr>
-  <p class="back-home"><a href="./index.html">ပင်မစာမျက်နှာသို့ ပြန်သွားရန်</a></p>
-</div>
+ဒေသခံများ၏ မှတ်ဉာဏ်များ၊ အဖြစ်အပျက်များနှင့် အချက်အလက်များကို စနစ်တကျ ပြန်လည်စုစည်းခြင်း၊ သုတေသနပြုခြင်းနှင့် အများပြည်သူလေ့လာနိုင်စေရန် ဖော်ထုတ်တင်ပြခြင်း။
+
+
+---
+
+## ဦးတည်ချက်
+
+သမိုင်းဝင် မှတ်တမ်းများနှင့် ဓာတ်ပုံများကို ဒစ်ဂျစ်တယ်မှတ်တမ်းတင်ခြင်း။
+တပ်ကုန်းမြို့နယ်နှင့် ပတ်သက်သည့် သုတေသနပြုချက်များကို စုစည်းဖော်ပြခြင်း။
+ရပ်ရွာလူထု၏ ပူးပေါင်းပါဝင်မှုဖြင့် ဒေသဆိုင်ရာ အချက်အလက်များအား ဖြည့်စွက်ခြင်း။
+
+---
+
+## အဖွဲ့၏သံဓိဋ္ဌာန်
+
+Tatkon-archivE အနေဖြင့်-------
+
+---
+
+## ဓာတ်ပုံမှတ်တမ်း
+
+*(ဓာတ်ပုံများကို နောက်တစ်ဆင့်တွင် စနစ်တကျ ပြန်လည်ထည့်သွင်းပါမည်)*
+
+---
+
+[ပင်မစာမျက်နှာသို့ ပြန်သွားရန်](./index.html)
 
 <style>
-  /* Header & Footer Removal */
-  .page-header { padding: 2rem 5rem !important; }
-  footer.site-footer, .site-footer { display: none !important; }
-  
-  /* Main Content Alignment */
-  .main-content { 
-    max-width: 60rem !important; margin: 0 auto; padding: 2.5rem 2rem 3rem !important; 
-    font-family: sans-serif; color: #2b2b2b; line-height: 1.65 !important;
-    text-align: center; /* အားလုံးကို Center ထားခြင်း */
+  /* 🖥 Layout & Typography ကို ရှေးစာမျက်နှာများနှင့် တစ်ပြေးညီ ညှိခြင်း */
+  .page-header {
+    padding: 2rem 5rem !important;
+  }
+  .project-name {
+    font-size: 2.5rem !important; 
+    margin-bottom: 1rem !important;
+  }
+  .project-tagline {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
   }
   
-  .main-content h1 { font-size: 2.2rem !important; font-weight: bold; margin-top: 1rem !important; margin-bottom: 0.5rem !important; border-bottom: 1px solid #eaecef; padding-bottom: 0.3rem; }
-  .subtitle { font-size: 1.1rem !important; color: #555; margin-bottom: 2.5rem !important; }
+  footer.site-footer, .site-footer {
+    display: none !important;
+  }
 
-  /* About Section */
-  .about-section h3 { font-size: 1.3rem !important; color: #155799; margin-top: 1.5rem !important; margin-bottom: 0.8rem !important; }
-  .about-section p, .about-section ul { font-size: 1rem !important; margin-bottom: 1rem !important; }
+  .main-content {
+    max-width: 60rem !important; 
+    padding: 2.5rem 2rem 3rem !important;
+    font-family: sans-serif;
+    color: #2b2b2b;
+    line-height: 1.65 !important;
+  }
 
-  /* Footer Links */
-  hr { height: 1px !important; background-color: #eaecef !important; border: none !important; margin: 2rem 0 !important; }
-  .back-home { font-size: 0.95rem !important; margin-bottom: 1.2rem !important; }
-  .back-home a { color: #0366d6; text-decoration: none; }
+  .main-content h1 {
+    font-size: 2.2rem !important;
+    font-weight: bold;
+    margin-top: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3rem;
+  }
 
-  /* Header Text Alignment & Size */
-  .project-name { font-size: 2.2rem !important; margin-bottom: 0.5rem !important; }
-  .project-tagline { font-size: 1.1rem !important; }
+  .main-content h2 {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    color: #155799;
+  }
 
-  /* Mobile Responsive */
+  .main-content h3 {
+    font-size: 1.15rem !important;
+    font-weight: bold;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .main-content p {
+    font-size: 0.95rem !important;
+    margin-bottom: 1.2rem !important;
+    text-align: justify;
+  }
+
+  .main-content strong, .main-content b {
+    color: #000;
+    font-weight: bold;
+  }
+
+  .main-content hr {
+    height: 1px !important;
+    background-color: #eaecef !important;
+    border: none !important;
+    margin: 2rem 0 !important;
+  }
+
+  /* 📱 မိုဘိုင်းဖုန်းပေါ်တွင် အချိုးကျစေရန် ညှိခြင်း */
   @media (max-width: 768px) {
     .page-header { padding: 1.5rem 1rem !important; }
-    .project-name { font-size: 1.5rem !important; }
-    .project-tagline { font-size: 0.9rem !important; }
+    .project-name { font-size: 1.4rem !important; }
+    .project-tagline { font-size: 0.8rem !important; }
     .main-content { padding: 1.5rem 1.2rem 2rem !important; }
+    
     .main-content h1 { font-size: 1.5rem !important; }
-    .subtitle { font-size: 0.9rem !important; }
+    .main-content h2 { font-size: 1.25rem !important; }
+    .main-content h3 { font-size: 1.05rem !important; }
+    .main-content p { font-size: 0.88rem !important; line-height: 1.6 !important; }
+  }
+
+  @media (max-width: 420px) {
+    .main-content p { font-size: 0.85rem !important; }
+    .main-content h1 { font-size: 1.35rem !important; }
+    .main-content h2 { font-size: 1.15rem !important; }
   }
 </style>
