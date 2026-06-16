@@ -16,14 +16,11 @@ description: ဒီပရောဂျက်လေး ဘယ်လိုဖြစ
     <p>ဒေသခံများ၏ မှတ်ဉာဏ်များ၊ အဖြစ်အပျက်များနှင့် အချက်အလက်များကို စနစ်တကျ ပြန်လည်စုစည်းခြင်း၊ သုတေသနပြုခြင်းနှင့် အများပြည်သူ လေ့လာနိုင်စေရန် ဖော်ထုတ်တင်ပြခြင်း။</p>
 
     <h3>ဦးတည်ချက်</h3>
-    <ul>
+    <ul style="list-style-position: inside; padding-left: 0;">
       <li>သမိုင်းဝင်မှတ်တမ်းများနှင့် ဓာတ်ပုံများကို ဒစ်ဂျစ်တယ်မှတ်တမ်းတင်ခြင်း။</li>
       <li>တပ်ကုန်းမြို့နယ်နှင့် ပတ်သက်သည့် သုတေသနပြုချက်များကို စုစည်းဖော်ပြခြင်း။</li>
       <li>ရပ်ရွာလူထု၏ ပူးပေါင်းပါဝင်မှုဖြင့် ဒေသဆိုင်ရာ အချက်အလက်များအား ဖြည့်စွက်ခြင်း။</li>
     </ul>
-
-    <h3>ကျွန်ုပ်တို့အကြောင်း</h3>
-    <p>ကျွန်ုပ်တို့သည် တပ်ကုန်းမြို့နယ်ကို ချစ်မြတ်နိုးသူများ၊ သမိုင်းဝါသနာရှင်များနှင့် သုတေသနပြုလုပ်သူများ ပေါင်းစပ်ဖွဲ့စည်းထားသော အဖွဲ့အစည်းတစ်ခု ဖြစ်ပါသည်။ ဤမော်ကွန်းတိုက်သည် မည်သည့်အကျိုးအမြတ်ကိုမျှ မမျှော်ကိုးဘဲ တပ်ကုန်း၏ မှတ်တမ်းကောင်းများကို ဖော်ထုတ်ရန်သာ ရည်ရွယ်ပါသည်။</p>
   </div>
 
   <hr>
@@ -31,36 +28,38 @@ description: ဒီပရောဂျက်လေး ဘယ်လိုဖြစ
 </div>
 
 <style>
-  /* Page Header စာသားများကို အရွယ်အစားညှိခြင်း */
-  .page-header { 
-    padding: 2rem 5rem !important; 
+  /* Header & Footer Removal */
+  .page-header { padding: 2rem 5rem !important; }
+  footer.site-footer, .site-footer { display: none !important; }
+  
+  /* Main Content Alignment */
+  .main-content { 
+    max-width: 60rem !important; margin: 0 auto; padding: 2.5rem 2rem 3rem !important; 
+    font-family: sans-serif; color: #2b2b2b; line-height: 1.65 !important;
+    text-align: center; /* အားလုံးကို Center ထားခြင်း */
   }
   
-  /* ခေါင်းစဉ်ကြီး (Tatkon-archive) */
-  .project-name { 
-    font-size: 2.2rem !important; /* h1 နဲ့ တစ်ထပ်တည်းဖြစ်အောင် 2.2rem ထားပေးလိုက်ပါတယ် */
-    margin-bottom: 0.5rem !important; 
-    line-height: 1.2 !important;
-  }
-  
-  /* ခေါင်းစဉ်သေး (Tagline) */
-  .project-tagline { 
-    font-size: 1.1rem !important; /* subtitle နဲ့ တစ်ထပ်တည်းဖြစ်အောင် 1.1rem ထားပေးလိုက်ပါတယ် */
-    margin-bottom: 0 !important; 
-    opacity: 0.9;
-  }
+  .main-content h1 { font-size: 2.2rem !important; font-weight: bold; margin-top: 1rem !important; margin-bottom: 0.5rem !important; border-bottom: 1px solid #eaecef; padding-bottom: 0.3rem; }
+  .subtitle { font-size: 1.1rem !important; color: #555; margin-bottom: 2.5rem !important; }
 
-  /* ကျန်ရှိသော CSS များ (ယခင်အတိုင်း) */
-  .main-content { max-width: 60rem !important; margin: 0 auto; padding: 2.5rem 2rem 3rem !important; font-family: sans-serif; color: #2b2b2b; line-height: 1.65 !important; }
-  .main-content h1 { font-size: 2.2rem !important; font-weight: bold; margin-top: 1rem !important; margin-bottom: 0.5rem !important; text-align: center; border-bottom: 1px solid #eaecef; padding-bottom: 0.3rem; }
-  .subtitle { text-align: center; font-size: 1.1rem !important; color: #555; margin-bottom: 2.5rem !important; }
+  /* About Section */
+  .about-section h3 { font-size: 1.3rem !important; color: #155799; margin-top: 1.5rem !important; margin-bottom: 0.8rem !important; }
+  .about-section p, .about-section ul { font-size: 1rem !important; margin-bottom: 1rem !important; }
 
-  /* Mobile Responsive အတွက် Header ချိန်ညှိချက် */
+  /* Footer Links */
+  hr { height: 1px !important; background-color: #eaecef !important; border: none !important; margin: 2rem 0 !important; }
+  .back-home { font-size: 0.95rem !important; margin-bottom: 1.2rem !important; }
+  .back-home a { color: #0366d6; text-decoration: none; }
+
+  /* Header Text Alignment & Size */
+  .project-name { font-size: 2.2rem !important; margin-bottom: 0.5rem !important; }
+  .project-tagline { font-size: 1.1rem !important; }
+
+  /* Mobile Responsive */
   @media (max-width: 768px) {
     .page-header { padding: 1.5rem 1rem !important; }
-    .project-name { font-size: 1.5rem !important; } /* h1 mobile size နဲ့ တူအောင် */
-    .project-tagline { font-size: 0.9rem !important; } /* subtitle mobile size နဲ့ တူအောင် */
-    
+    .project-name { font-size: 1.5rem !important; }
+    .project-tagline { font-size: 0.9rem !important; }
     .main-content { padding: 1.5rem 1.2rem 2rem !important; }
     .main-content h1 { font-size: 1.5rem !important; }
     .subtitle { font-size: 0.9rem !important; }
